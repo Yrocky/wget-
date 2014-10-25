@@ -1,0 +1,2644 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dropEffect="none" class="no-js no-auth">
+<head>
+<meta charset="utf-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+
+<title>
+
+面向对象编程的弊端是什么？ - 知乎
+
+</title>
+
+<meta name="apple-itunes-app" content="app-id=432274380, app-argument=zhihu://questions/20275578">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="mobile-agent" content="format=html5;url=http://www.zhihu.com/question/20275578">
+<meta id="znonce" name="znonce" content="9a08ee2476e14e0c8e64263098c154e3">
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(57px).png" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(72px).png" sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(76px).png" sizes="76x76" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(114px).png" sizes="114x114" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(120px).png" sizes="120x120" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(152px).png" sizes="152x152" />
+
+
+<link rel="shortcut icon" href="http://static.zhihu.com/static/favicon.ico" type="image/x-icon">
+
+<link rel="search" type="application/opensearchdescription+xml" href="http://static.zhihu.com/static/search.xml" title="知乎" />
+<link rel="stylesheet" href="http://static.zhihu.com/static/ver/464a8e83a816eeb9410081a729e14433.z.css">
+
+<meta name="google-site-verification" content="FTeR0c8arOPKh8c5DYh_9uu98_zJbaWw53J-Sch9MTg" />
+<meta property="qc:admins" content="14414345146201056375" />
+
+
+
+<!--[if lt IE 9]>
+<script src="http://static.zhihu.com/static/components/respond/dest/respond.min.js"></script>
+<link href="http://static.zhihu.com/static/components/respond/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/static/components/respond/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/static/components/respond/cross-domain/respond.proxy.js"></script>
+<![endif]-->
+
+<script src="http://static.zhihu.com/static/ver/c18693016ee175f69ca64d8aac8f8d2b.instant.min.js"></script>
+
+
+
+
+</head>
+
+<body class="zhi">
+<div role="navigation" class="zu-top">
+<div class="zg-wrap" id="zh-top-inner">
+<a href="/" class="zu-top-link-logo" id="zh-top-link-logo">知乎</a>
+
+
+<div role="search" id="zh-top-search" class="zu-top-search">
+<form method="GET" action="/search" id="zh-top-search-form" class="zu-top-search-form form-with-magnify">
+
+<input type="text" class="zu-top-search-input" id="q" name="q" autocomplete="off" value="" placeholder="搜索话题、问题或人…" />
+<input type="hidden" name="type" value="question" />
+<label for="q" class="hide-text">知乎搜索</label>
+<button type="submit" class="magnify-button"><i class="icon icon-magnify-q"></i><span class="hide-text">搜索</span></button>
+</form>
+<button class="zu-top-add-question" id="zu-top-add-question">提问</button>
+</div>
+
+
+
+<div id="zg-top-nav" class="zu-top-nav">
+<ul class="zu-top-nav-ul zg-clear">
+
+<li class="zu-top-nav-li " id="zh-top-home-link">
+<a class="zu-top-nav-link" href="/" id="zh-top-link-home">首页</a>
+</li>
+<li class="top-nav-topic-selector zu-top-nav-li " id="zh-top-nav-item-topic">
+<a class="zu-top-nav-link" href="/topic" id="top-nav-dd-topic">话题</a>
+
+</li>
+<li class="zu-top-nav-li ">
+<a class="zu-top-nav-link" href="/explore">发现</a>
+</li>
+
+
+</ul>
+<div class="zu-top-nav-live zu-noti7-popup zg-r5px no-hovercard" id="zh-top-nav-live-new" role="popup" tabindex="0">
+<div class="zu-top-nav-live-inner zg-r5px">
+<div class="zu-top-live-icon">&nbsp;</div>
+<div class="zu-home-noti-inner" id="zh-top-nav-live-new-inner">
+<div class="zm-noti7-popup-tab-container clearfix" tabindex="0">
+<button class="zm-noti7-popup-tab-item message">
+<span class="icon">消息</span>
+<span class="new-noti" style="display:none;">0</span>
+</button>
+<button class="zm-noti7-popup-tab-item user">
+<span class="icon">用户</span>
+<span class="new-noti" style="display:none;">0</span>
+</button>
+<button class="zm-noti7-popup-tab-item thanks">
+<span class="icon">赞同和感谢</span>
+<span class="new-noti" style="display:none;">0</span>
+</button>
+</div>
+</div>
+<div class="zm-noti7-frame-border top"></div>
+<div class="zm-noti7-frame">
+<div class="zm-noti7-content">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-popup-refresh" style="display:none;">
+<img class="noti-spinner" src="/static/img/spinner2.gif" />
+</div>
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<img class="noti-spinner" src="/static/img/noti-loading.gif" />
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-content" style="display:none;">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-popup-refresh" style="display:none;">
+<img class="noti-spinner" src="/static/img/spinner2.gif" />
+</div>
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<img class="noti-spinner" src="/static/img/noti-loading.gif" />
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-content" style="display:none;">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-popup-refresh" style="display:none;">
+<img class="noti-spinner" src="/static/img/spinner2.gif" />
+</div>
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<img class="noti-spinner" src="/static/img/noti-loading.gif" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-frame-border bottom"></div>
+<div class="zm-noti7-popup-footer">
+<a href="/notifications" class="zm-noti7-popup-footer-all zg-right">查看全部 &raquo;</a>
+<a href="/settings/notify" class="zm-noti7-popup-footer-set" title="通知设置" ><i class="zg-icon zg-icon-settings"></i></a>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+<ul class="topnav-noauth clearfix">
+<li>
+<a href="javascript:;" class="js-signup-noauth"><i class="zg-icon zg-icon-dd-home"></i>注册知乎</a>
+</li>
+<li>
+<a href="javascript:;" class="js-signin-noauth">登录</a>
+</li>
+</ul>
+
+
+</div>
+</div>
+
+<div class="zu-global-notify" id="zh-global-message" style="display:none">
+<div class="zg-wrap">
+<div class="zu-global-nitify-inner">
+<a class="zu-global-notify-close" href="javascript:;" title="关闭" name="close">x</a>
+<span class="zu-global-notify-icon"></span>
+<span class="zu-global-notify-msg"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class="zu-global-notify zu-global-notify-info" id="zh-question-redirect-info" style="display:none"></div>
+
+
+<div class="zu-global-notify zu-global-notify-info" id="zh-question-notification-summary" style="display:none;">
+<div class="zg-wrap">
+<div class="zu-global-nitify-inner">
+<span class="zu-global-notify-icon"></span>
+<ul class="zu-question-notify-wrap">
+</ul>
+</div>
+</div>
+</div>
+<div class="zg-wrap zu-main question-page" itemscope itemtype="http://schema.org/Question" id="zh-single-question-page"
+data-urltoken="20275578">
+<meta itemprop="isTopQuestion" content="false" />
+<meta itemprop="visitsCount" content="39171" />
+<div class="zu-main-content">
+<div class="zu-main-content-inner with-indention-votebar">
+
+
+<div id="zh-message-container" class="zg-info-message" style="display:none;"></div>
+
+
+<div class="zm-tag-editor zg-section">
+<div class="zm-tag-editor-labels zg-clear">
+
+<a class="zm-item-tag"
+href="/topic/19569910"
+data-tip="t$b$19569910" data-token="19569910" data-topicid="6574">
+面向对象编程
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19580349"
+data-tip="t$b$19580349" data-token="19580349" data-topicid="10033">
+计算机科学
+</a>
+
+</div>
+</div>
+<div id="zh-question-title" data-editable="true">
+
+<h2 class="zm-item-title zm-editable-content">
+
+面向对象编程的弊端是什么？
+
+</h2>
+</div>
+<div id="zh-question-detail" class="zm-item-rich-text" data-resourceid="290432" data-action="/question/detail">
+
+<div class="zm-editable-content">当前很多资料都在讲述面向对象的优点，可是在软件开发或者大型软件项目中，面向对象却带来了巨大的类关系设计开销，但具体有何弊端却没有详尽的介绍。</div>
+
+
+</div>
+<div class="zm-item-meta zm-item-comment-el clearfix" id="zh-question-meta-wrap">
+<div class="zm-meta-panel">
+
+<a href="#" name="addcomment" class="toggle-comment meta-item">
+<i class="z-icon-comment"></i>9 条评论
+</a>
+<a href="#" name="share" class="share meta-item">
+<i class="z-icon-share"></i>分享
+</a>
+
+</div>
+<div class="panel-container">
+
+</div>
+</div>
+
+<div class="zh-answers-title clearfix">
+
+<div id="zh-answers-filter" class="answers-sorter">
+
+<span class="lbl">按票数排序</span>
+<a class="lbl" href="/question/20275578?sort=created">按时间排序</a>
+
+<i class="zg-icon zg-icon-double-arrow"></i>
+</div>
+
+<h3 data-num="87" id="zh-question-answer-num">87 个回答</h3>
+</div>
+<div class="zh-question-answer-summary-wrap zm-item-rich-text" id="zh-question-answer-summary-wrap" style="display:none;">
+<h3>
+<a href="http://www.zhihu.com/question/20014415" target="_blank" class="zg-right zg-link-litblue" style="font-weight:normal">什么是答案总结？</a>
+答案总结</h3>
+<div id="zh-question-answer-summary" class="zg-section"
+data-resourceid="290432" data-action="/question/summary">
+
+<div class="zm-editable-content"></div>
+
+</div>
+</div>
+
+<div id="zh-question-answer-wrap" data-pagesize="20" class="zh-question-answer-wrapper" data-widget="navigable" data-navigable-options="{&quot;items&quot;: &quot;&gt;.zm-item-answer&quot;}" data-init="{&quot;params&quot;: {&quot;url_token&quot;: 20275578, &quot;pagesize&quot;: 20, &quot;offset&quot;: 0}, &quot;nodename&quot;: &quot;QuestionAnswerListV2&quot;}" data-fixed-summary="1">
+
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemprop="topAnswer"
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5943688"
+data-atoken="26577791"
+data-collapsed="0"
+data-created="1402211126"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="1919.12421361"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5943688"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">1015</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a class="zm-item-link-avatar"
+href="javascript:void(0);">
+<img src="http://pic4.zhimg.com/da8e974dc_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic1.zhimg.com/da8e974dc_s.jpg" />
+</a>
+
+
+
+知乎用户
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="1015">
+
+<span class="voters">
+知乎用户、<a data-tip="p$t$bi-ge-gao-89" href="http://www.zhihu.com/people/bi-ge-gao-89" class="zg-link" title="碧格高">碧格高</a>、<a data-tip="p$t$hu-yong-hao-49" href="http://www.zhihu.com/people/hu-yong-hao-49" class="zg-link" title="胡永浩">胡永浩</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">弊端是，没有人还记得面向对象原本要解决的问题是什么。<br><br>1、面向对象原本要解决什么（或者说有什么优良特性）<br>似乎很简单，但实际又很不简单：面向对象三要素<b>封装、继承、多态</b><br><br>（<b>警告</b>：事实上，从业界如此总结出这面向对象三要素的一刹那开始，就已经开始犯错了！）。<br><br><b>封装</b>：封装的意义，在于明确标识出允许外部使用的所有成员函数和数据项，或者叫<b>接口</b>。<br><br>有了封装，就可以明确区分<b>内外</b>，使得类实现者可以修改封装<b>内</b>的东西而不影响<b>外</b>部调用者；而外部调用者也可以知道自己不可以碰哪里。这就提供一个良好的合作基础——或者说，只要<b>接口</b>这个基础约定不变，则代码改变不足为虑。<br><br><br><br><b>继承+多态</b>：继承和多态必须一起说。一旦割裂，就说明理解上已经误入歧途了。<br><br>先说<b>继承</b>：继承同时具有两种含义：其一是继承基类的方法，并做出自己的扩展——号称解决了代码重用问题；其二是<b>声明</b>某个子类<b>兼容</b>于某基类（或者说，接口上完全<b>兼容</b>于基类），外部调用者可无需关注其差别（内部机制会自动把请求派发[dispatch]到合适的逻辑）。<br><br>再说<b>多态</b>：基于对象所属类的不同，外部对同一个方法的调用，实际执行的逻辑不同。<br><br>很显然，多态实际上是<b>依附于继承的第二种含义</b>的。让它与封装、继承这两个概念并列，是<b>不符合逻辑</b>的。不假思索的就把它们当作可并列概念使用的人，显然是从一开始就被误导了。<br><br><br>实践中，继承的第一种含义（实现继承）意义并不很大，甚至常常是有害的。因为它使得子类与基类出现强耦合。<br><br>继承的第二种含义非常重要。它又叫“接口继承”。<br><b>接口继承</b>实质上是要求“做出一个良好的抽象，这个抽象规定了一个兼容接口，使得外部调用者无需关心具体细节，可一视同仁的处理实现了特定接口的所有对象”——这在程序设计上，叫做<b>归一化</b>。<br><br><br><b>归一化</b>使得外部使用者可以不加区分的处理所有接口兼容的对象集合——就好象linux的泛文件概念一样，所有东西都可以当文件处理，不必关心它是内存、磁盘、网络还是屏幕（当然，如果你需要，当然也可以区分出“字符设备”和“块设备”，然后做出针对性的设计：细致到什么程度，视需求而定）。<br><br><b>归一化</b>的实例：<br>a、一切对象都可以序列化/toString<br>b、一切UI对象都是个window，都可以响应窗口事件。<br><br>——必须注意，是一切（符合xx条件的）对象皆可以做什么，而不是“一切皆对象”。后者毫无意义。<br><br><br>显然，<b>归一化</b>可以大大简化使用者的处理逻辑：这和带兵打仗是类似的，班长需要知道每个战士的姓名/性格/特长，否则就不知道该派谁去对付对面山坡上的狙击手；而连长呢，只需知道自己手下哪个班/排擅长什么就行了，然后安排他们各自去守一段战线；到了师长/军长那里，他更关注战场形势的转变及预期……没有这种层层简化、而是必须直接指挥到每个人的话，累死军长都没法指挥哪怕只是一场形势明朗的冲突——光一个个打完电话就能把他累成哑巴。<br><br><br>软件设计同样。比如说，消息循环在派发消息时，只需知道所有UI对象都是个window，都可以响应窗口消息就足够了；它没必要知道每个UI对象究竟是什么——该对象自己知道收到消息该怎么做。<br><br>合理划分功能层级、适时砍掉不必要的繁杂信息，一层层向上提供简洁却又完备的信息/接口，高层模块才不会被累死——KISS是最难也是最优的软件设计方法，没有之一。<br><br><br><br><b>总结</b>：面向对象的好处实际就这么两点。<br>一是通过封装明确定义了何谓接口、何谓接口内部实现、何谓接口的外部调用者，使得大家各司其职，不得越界；<br>二是通过继承+多态这种内置机制，在语言的层面支持<b>归一化</b>的设计，并使得内行可以从代码本身看到这个设计——但，注意仅仅只是<b>支持</b>归一化的设计。不懂如何做出这种设计的外行仍然不可能从瞎胡闹的设计中得到任何好处。<br><br><br>显然，不用面向对象语言、不用class，一样可以做归一化的设计（如老掉牙的泛文件概念、游戏行业的一切皆精灵），一样可以封装（通过定义模块和接口），只是用面向对象语言可以直接用语言元素显式声明这些而已；<br>而用了面向对象语言，满篇都是class，并不等于就有了归一化的设计。甚至，因为被这些花哨的东西迷惑，反而更加不知道什么才是设计。<br><br><br>2、人们以为面向对象是什么、以及因此制造出的悲剧以及闹剧<br><br>误解一、<b>面向对象语言支持用语言元素直接声明封装性和接口兼容性，所以用面向对象语言写出来的东西一定更清晰、易懂</b>。<br><br>事实上，既然class意味着声明了封装、继承意味着声明了接口兼容，那么错误的类设计显然就是错误的声明、盲目定义的类就是无意义的喋喋不休。而<b>错误的声明比没有声明更糟；通篇毫无意义的喋喋不休还不如错误的声明</b>。<br><br>除非你真正做出了漂亮的设计，然后用面向对象的语法把这个设计声明出来——仅仅声明真正有设计、真正需要人们注意的地方，而不是到处瞎叫唤——否则不可能得到任何好处。<br><br><b>一切皆对象实质上是在鼓励堆砌毫无意义的喋喋不休</b>。大部分人——注意，不是个别人——甚至被这种无意义的喋喋不休搞出了神经质，以至于非要在喋喋不休中找出意义：没错，我说的就是设计模式驱动编程，以及<a href="http://coolshell.cn/articles/8745.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">如此理解面向对象编程<i class="icon-external"></i></a>。<br><br><br><br>误解二、<b>面向对象三要素是封装、继承、多态，所以只要是面向对象语言写的程序，就一定“继承”了语言的这三个优良特性</b>。<br><br>事实上，如前所述，封装、继承、多态只是语言层面对良好设计的支持，并不能导向良好的设计。<br>如果你的设计做不出真正的封装性、不懂得何谓归一化，那它用什么写出来都是垃圾。<br><br><br><br>误解三、<b>把软件写成面向对象的至少是无害的</b>。<br><br>要了解事实上是什么，需要先科普几个概念。<br><br>什么是真正的<b>封装</b>？<br><br>——回答我，封装是不是等于“把不想让别人看到、以后可能修改的东西用private隐藏起来”？<br><br>显然<b>不是</b>。<br>如果功能得不到满足、或者未曾预料到真正发生的需求变更，那么你怎么把一个成员变量/函数放到private里面的，将来就必须怎么把它挪出来。<br><br>你越瞎搞，越去搞某些华而不实的“灵活性”——比如某种设计模式——真正的需求来临时，你要动的地方就越多。<br><br><b>真正的封装是，经过深入的思考，做出良好的抽象，给出“完整且最小”的接口，并使得内部细节可以对外透明（注意：对外透明</b>的意思是<b>，</b>外部调用者可以顺利的得到自己想要的任何功能，<b>完全意识不到内部细节的存在；</b>而不是外部调用者为了完成某个功能、却被碍手碍脚的private声明弄得火冒三丈；最终只能通过怪异、复杂甚至奇葩的机制，才能更改他必须关注的细节——而且这种访问往往被实现的如此复杂，以至于稍不注意就会酿成大祸）。<br><br>一个设计，只有达到了这个高度，才能真正做到所谓的“封装性”，才能真正杜绝对内部细节的访问。<br><br>否则，生硬放进private里面的东西，最后还得生硬的被拖出来——当然，这种东西经常会被美化成“访问函数”之类渣渣（不是说访问函数是渣渣，而是说因为设计不良、不得不以访问函数之类玩意儿在封装上到处挖洞洞这种行为是渣渣）。<br><br><br><br>一个典型的例子，就是C++的new和过于灵活的内存使用方式之间的耦合。<br>这个耦合就导致了new[]/delete[]、placement new/placement delete之类怪异的东西：这些东西必须成对使用，怎么分配就必须怎么释放，任何错误搭配都可能导致程序崩溃——这是为了兼容C、以及得到更高执行效率的无奈之举；但，它更是“抽象层次过于复杂，以至于无法做出真正透明的设计”的典型案例：只能说，c++设计者是真正的大师，如此复杂的东西在他手里，才仅仅付出了如此之小的代价。<br><br>(更准确点说，是new/delete和c++的其它语言元素之间是非正交的；于是当同时使用这些语言元素时，就不可避免的出现了彼此扯淡的现象。即new/delete这个操作对其它语言元素非透明：在c++的设计里，是通过把new/delete分成两层，一是内存分配、二是在分配的内存上初始化，然后暴露这个分层细节，从而在最大程度上实现了封装——但比之其它真正能彼此透明的语言元素间的关系，new/delete显然过于复杂了)<br><br>这个案例，可以非常直观的说明“设计出真正对外透明的封装”究竟会有多难。<br><br><br><br><br><br><b>接口继承</b>真正的好处是什么？是用了继承就显得比较高大上吗？<br><br>显然不是。<br><br>接口继承没有任何好处。它只是声明某些对象在某些场景下，可以用归一化的方式处理而已。<br><br>换句话说，如果不存在“需要不加区分的处理类似的一系列对象”的场合，那么继承不过是在装X罢了。<br><br><br><br>封装可应付需求变更、归一化可简化（类的使用者的）设计：以上，就是面向对象最最基本的好处。<br>——其它一切，都不过是在这两个基础上的衍生而已。<br><br><br>换言之，如果得不到这两个基本好处，那么也就没有任何衍生好处——应付需求变更/简化设计并不是打打嘴炮就能做到的。<br><br><br>了解了如上两点，那么，很显然：<br>1、如果你没有做出好的抽象、甚至完全不知道需要做好的抽象就忙着去“封装”，那么你只是在“封”和“装”而已。<br>这种“封”和“装”的行为只会制造累赘和虚假的承诺；这些累赘以及必然会变卦的承诺，必然会为未来的维护带来更多的麻烦，甚至拖垮整个项目。<br><br>正是这种累赘和虚假的承诺的拖累，而不是所谓的为了应付“需求改变”所必需的“灵活性”，才是大多数面向对象项目代码量暴增的元凶。<br><br>2、没有真正的抓到一类事物（<b>在当前应用场景下</b>）的根本，就去设计继承结构，是必不会有所得的。<br><br>不仅如此，请注意我强调了<b>在当前应用场景下</b>。<br>这是因为，分类是一个极其主观的东西，<b>不存在普适的分类法</b>。<br><br>举例来说，我要研究种族歧视，那么必然以肤色分类；换到法医学，那就按死因分类；生物学呢，则搞门科目属种……<br><br>想象下，需求是“时尚女装”，你却按“窒息死亡/溺水死亡/中毒死亡之体征”来了个分类……你说后面这软件还能写吗？<br><br><br><br>类似的，我遇到过写游戏的却去纠结“武器装备该不该从游戏角色继承”的神人。你觉得呢？<br><br>事实上，游戏界真正的抽象方法之一是：一切都是个有位置能感受时间流逝的精灵；而某个“感受到时间流逝显示不同图片的对象”，其实就是游戏主角；而“当收到碰撞事件时，改变主角下一轮显示的图片组的”，就是游戏逻辑。<br><br><br>看看它和“武器装备该不该从游戏角色继承”能差多远。想想到得后来，以游戏角色为基类的方案会变成什么样子？为什么会这样？<br><br><br><br><br><br>最具重量级的炸弹则是：正方形是不是一个矩形？它该不该从矩形继承？如果可以从矩形继承，那么什么是正方形的长和宽？在这个设计里，如果我修改了正方形的长，那么这个正方形类还能不能叫正方形？它不应该自然转换成长方形吗？什么语言能提供这种机制？<br><br>造成这颗炸弹的根本原因是，面向对象中的“类”，和我们日常语言乃至数学语言中的“类”根本就不是一码事。<br><br>面向对象中的“类”，意思是“接口上兼容的一系列对象”，关注的只不过是接口的兼容性而已（可搜索 里氏代换）；关键放在“可一视同仁的处理”上（学术上叫is-a）。<br><br>显然，这个定义完全是且只是为了应付归一化的需要。<br><br>这个定义经常和我们日常对话中提到的类概念上重合；但，如前所述，根本上却彻彻底底是八杆子打不着的两码事。<br><br>就着生活经验滥用“类”这个术语，甚至依靠这种粗浅认识去做设计，必然会导致出现各种各样的偏差。这种设计实质上就是在胡说八道。<br>就着这种胡说八道来写程序——有人觉得这种人能有好结果吗？<br><br>——但，几乎所有的面向对象语言、差不多所有的面向对象方法论，却就是在鼓励大家都这么做，完全没有意识到它们的理论基础有多么的不牢靠。<br>——如此作死，焉能不死？！<br><br><br>——你还敢说面向对象无害吗？<br><br>——在真正明白何谓封装、何谓归一化之前，每一次写下class，就在错误的道路上又多走了一步。<br>——设计真正需要关注的核心其实很简单，就是封装和归一化。<b>一个项目开始的时候，“class”写的越早，就离这个核心越远</b>。<br>——过去鼓吹的各种面向对象方法论、甚至某些语言本身，恰恰正是在怂恿甚至逼迫开发者尽可能早、尽可能多的写class。<br><br><br><br>误解四、只有面向对象语言写的程序才是面向对象的。<br><br>事实上，unix系统提出泛文件概念时，面向对象语言根本就不存在；游戏界的精灵这个基础抽象，最初是用C甚至汇编写的；……。<br><br>面向对象其实是汲取以上各种成功设计的经验才提出来的。<br><br>所以，面向对象的设计，不必非要c++/java之类支持面向对象的语言才能实现；它们不过是在你做出了面向对象的设计之后，能让你写得更惬意一些罢了——但，如果一个项目无需或无法做出面向对象的设计，某些面向对象语言反而会让你很难受。<br><br><b>用面向对象语言写程序，和一个程序的设计是面向对象的，两者是八杆子打不着的两码事</b>。纯C写的linux kernel事实上比c++/java之类语言搞出来的大多数项目更加面向对象——只是绝大部分人都自以为自己到处瞎写class的面条代码才是面向对象的正统、而死脑筋的linus搞的泛文件抽象不过是过程式思维搞出来的老古董。<br><br>——这个误解之深，甚至达到连wiki词条里面，都把OOP定义为“用支持面向对象的语言写程序”的程度。<br>——恐怕这也是没有人说泛文件设计思想是个骗局、而面向对象却被业界大牛们严厉抨击的根本原因了：真正的封装、归一化精髓被抛弃，浮于表面的、喋喋不休的class/设计模式却成了”正统“！<br><br>借用楼下PeytonCai朋友的链接：<br><a href="http://dev.yesky.com/405/34480405.shtml" class=" wrap external" target="_blank" rel="nofollow noreferrer">名家吐槽：面向对象编程从骨子里就有问题<i class="icon-external"></i></a><br><br>————————————————————————————<br><br>总结： 面向对象其实是对过去成功的设计经验的总结。但那些成功的设计，不是因为用了封装/归一化而成功，而是<b>切合自己面对的问题，给出了恰到好处的设计</b>。<br><br>让一个初学者知道自己应该向封装/归一化这个方向前进，是好的；用一个面向对象的条条框框把他们框在里面、甚至使得他们以为写下class是完全无需思索的、真正应该追求的是设计模式，则是罪恶的。<br><br>事实上，class写的越随意，才越需要设计模式；就着错误的实现写得越多、特性用得越多，它就越发的死板，以至于必须更加多得多的特性、模式、甚至语法hack，才能勉强完成需求。<br><br>只有经过真正的深思熟虑，才有可能做到KISS。<br><br><br>到处鼓噪的面向对象编程的最大弊端，是把软件设计工作偷换概念，变成了“就着class及相关教条瞎胡闹，不管有没有好处先插一杠子”，甚至使得人们忘记去关注“抽象是否真正简化了面对的问题”。<br><br><b>一言以蔽之：没有银弹。</b>任何寄希望于靠着某种“高大上”的技术——无论是面向对象、数据驱动、消息驱动还是lambda、协程等等等等——就能一劳永逸的使得任何现实问题“迎刃而解”的企图都是注定要失败的，都不过是外行的意淫而已；靠意淫来做设计，不掉沟里才怪。<br><br>想要做出KISS的方案，就必须对面对的问题有透彻的了解，有足够的经验和能力，并经过深思熟虑，这才能做出简洁的抽象：至于最终的抽象是面向对象的、面向过程的还是数据驱动/消息驱动的，甚至是大杂烩的，都是可能的。只要这个设计能做到最重要、也是最难的KISS，那它就是个好设计。<br><br>的确有成功的经验、正确/合理的方向：技术无罪，但，没有银弹。
+<a href="/question/20275578/answer/26577791" class="toggle-expand">显示全部</a>
+<div class="fixed-summary-mask"></div>
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5943688-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2014-06-08" target="_blank" href="/question/20275578/answer/26577791">编辑于 2014-07-12</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>70 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5990304"
+data-atoken="26690018"
+data-collapsed="0"
+data-created="1402448703"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="268.124370654"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5990304"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">159</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$pansz"
+class="zm-item-link-avatar"
+href="/people/pansz">
+<img src="http://pic4.zhimg.com/310d85e8d_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic1.zhimg.com/310d85e8d_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$pansz" href="/people/pansz">pansz</a>，<strong title="欢迎评论" class="zu-question-my-bio">欢迎评论</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="159">
+
+<span class="voters">
+<a data-tip="p$t$wang-dou-dou-57-62" href="http://www.zhihu.com/people/wang-dou-dou-57-62" class="zg-link" title="王逗逗">王逗逗</a>、<a data-tip="p$t$li-ming-liang-25" href="http://www.zhihu.com/people/li-ming-liang-25" class="zg-link" title="李明亮">李明亮</a>、<a data-tip="p$t$cui-song-hui" href="http://www.zhihu.com/people/cui-song-hui" class="zg-link" title="崔松辉">崔松辉</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">可能我的看法有些简单粗暴。但是我希望表达一下我的「一家之言」。<br><br>面向对象编程有很多用途，很多用法，但是我们会发现「设计模式驱动」成为了非常有代表性的流派。有时我们会疑惑，为什么会有设计模式，为什么面向对象编程会出现如此恐怖的这么复杂的类关系。<br><br>我认为这是为了满足「增量式开发」。它假定几个前提：<br>1，将一份代码测试调试稳定所需要花的时间，远远大于撰写代码的时间。<br>2，已经通过测试的旧代码永远不修改，只对新代码进行新增，是最可靠的开发方式。<br>3，你经常需要重用没有源代码的库，并且扩展和修改其功能。<br><br>很多面向对象的设计，其实是为了满足一个很基本的目的：不修改旧代码，只新增代码。代码只增不改，所以才会出现「继承」这种东西。因为你不需要原有的源代码也不需要修改原有的类，而是派生一个类增加新的方法。「继承」的本来目的看起来就是为了解决这个问题。<br><br>因此，很多类层次关系的设计，不是为了更高的效率，不是为了代码看起来更清晰，而是为了「保证旧代码不需要被修改」这个目的。<br><br>不过，这是不是现实呢？在某些公司，这是事实，在很多公司，以上的假定不是现实。<br>1，很多代码并没有经过长时间的充分的测试，因而没有必要为了不浪费原有测试资源而拒绝修改旧代码。<br>2，修改旧代码在大多数公司是不可避免的。<br>3，很多时候我们提倡读懂库的源代码，而不会盲目使用无源代码的库。<br>4，现在流行的敏捷开发模型中宣传要拥抱变化。在敏捷模型中，测试案例是被固化的，而代码与架构都可以经常被修改，换句话说，不修改旧代码，以及通过类层次关系设计系统架构，这些特性对敏捷来说都不重要，甚至背道而驰。<br><br>我的看法与 酷壳「<b><a href="http://coolshell.cn/articles/8745.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">如此理解面向对象编程」<i class="icon-external"></i></a></b>恰恰相反，他认为过度 OO 设计是敏捷带来的后果，而我认为敏捷开发恰恰使得过度 OO 设计变得毫无意义。——那些过度 OO 设计的人并没有真正的懂敏捷。<u>真正的敏捷是在保证测试案例通过的前提下，直接简单粗暴的修改源代码，而不是为了避免修改三行源代码制造出十多个类</u>。<br><br>如果我们的开发基于「旧代码就是需要被经常修改的」，那么面向对象中的一部分特性其实变成了毫无意义的累赘。当然这并意味着 OOP 完全无用，在这个前提下，其实我们需要重新审视面向对象的程序设计，取其精华去其糟粕。<br><br>封装性，继承性，多态性，这些特性在敏捷开发的情况下还那么重要吗？<br><br>封装性：在所有代码都公开，随时可能被修改被重构的情况下，封装性意义没有想象的那么大，虽然它仍然有价值。它的价值在于使程序行为更可预期。<br><br>继承性：继承的本目的是在不修改代码的情况下扩展代码的功能，但如果我们能够自由修改代码，那继承在绝大多数时候并不是最佳选择。事实上，巨大的类设计开销往往都是继承性带来的。继承性在今天不但没有太大的价值，反而常常有害。（这里所说的继承性指的是 invalid s 所说的第一种情况，对他说的第二种情况，我不认为那算作继承性，而应该被算作多态性。）<br><br>多态性：多态性要求一个函数在接受不同的类型对象作为参数时自动表现出不同的行为。或者说要求不同类型的对象都可以调用相同名字的方法，并且自己处理应该有的不同行为。——这个特性在今天依然重要，而且是最重要的特性，它的存在意味着 OOP 的价值仍然存在——即便对于非 OOP 的程序设计语言。只要应用了多态性思想，那么其实它就是 OOP 的。考虑一下 Linux 中的「一切皆文件」的概念，其实换句话说就是对一切对象皆可调用用于文件的那些方法，这妥妥的是「多态性」。图形界面的编程 API 中，一切对象皆可 Paint()，一切对象皆可 toString()，这妥妥的也是「多态性」。<br><br>从某种意义上说，「模板」这个一般认为不属于 OOP 的特性，却非常好的体现了多态性。模板允许同名函数接收不同类型的参数自动表现出不同的行为（虽然编译器实际上是生成了多个函数，但从编程的角度来讲它其实是一个函数）。因此我认为懂得模板技术在 OOP 设计中也非常重要，他用更小的开销更好的可读性实现了 OOP 思想。<br><br>结语：很多时候，巨大的类关系设计开销是为了避免修改旧代码而不是为了使代码更可读。而在修改旧代码不可避免或者根本不需要避免的时候，很多类关系设计开销是不必要的，我们在使用面向对象设计方法时，最好是取其精华去其糟粕，避免那些额外的不必要的类设计开销，以提升代码的可读性为目标来进行设计，而不要以避免修改代码为目标进行设计，在这种情况下 OOP 仍然有其存在的价值。
+<a href="/question/20275578/answer/26690018" class="toggle-expand">显示全部</a>
+<div class="fixed-summary-mask"></div>
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5990304-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2014-06-11" target="_blank" href="/question/20275578/answer/26690018">编辑于 2014-06-12</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>22 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="6141503"
+data-atoken="27046327"
+data-collapsed="0"
+data-created="1403242706"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="270.124324436"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-6141503"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">152</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$miloyip"
+class="zm-item-link-avatar"
+href="/people/miloyip">
+<img src="http://pic4.zhimg.com/b0a73b946_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic1.zhimg.com/b0a73b946_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$miloyip" href="/people/miloyip">Milo Yip</a>，<strong title="游戏程序员、《游戏引擎架构》译者" class="zu-question-my-bio">游戏程序员、《游戏引擎架构》译者</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="152">
+
+<span class="voters">
+知乎用户、<a data-tip="p$t$yuanmi" href="http://www.zhihu.com/people/yuanmi" class="zg-link" title="大名">大名</a>、<a data-tip="p$t$xu-wei-xue" href="http://www.zhihu.com/people/xu-wei-xue" class="zg-link" title="徐卫学">徐卫学</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">我想从一个游戏程序员的角度探讨OOP的一个问题──性能。<br><br>现时C++可以说是支持OOP范式中最为常用及高性能的语言。虽然如此，在C++使用OOP的编程方式在一些场合未能提供最高性能。 [1]详细描述了这个观点，我在此尝试简单说明。注意：其他支持OOP的语言通常都会有本答案中提及的问题，C++只是一个合适的说明例子。<br><br>历史上，OOP大概是60年代出现，而C++诞生于70年代末。现在的硬件和当时的有很大差异，其中最大的问题是<a href="http://baike.baidu.com/view/4230085.htm" class=" wrap external" target="_blank" rel="nofollow noreferrer">内存墙_百度百科<i class="icon-external"></i></a>。<br><br><noscript><img src="http://pic4.zhimg.com/9cd401779cb4e34813d38b38c479696a_b.jpg" data-rawwidth="733" data-rawheight="399" class="origin_image zh-lightbox-thumb" width="733" data-original="http://pic3.zhimg.com/9cd401779cb4e34813d38b38c479696a_r.jpg">图1: 处理器和内存的性能提升比较，处理器的提升速度大幅高于内存[2]。</noscript><img src="//s1.zhimg.com/misc/whitedot.jpg" data-rawwidth="733" data-rawheight="399" class="origin_image zh-lightbox-thumb lazy" width="733" data-original="http://pic3.zhimg.com/9cd401779cb4e34813d38b38c479696a_r.jpg" data-actualsrc="http://pic4.zhimg.com/9cd401779cb4e34813d38b38c479696a_b.jpg">图1: 处理器和内存的性能提升比较，处理器的提升速度大幅高于内存[2]。<br><br>跟据<a href="http://www.eecs.berkeley.edu/~rcs/research/interactive_latency.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">Numbers Every Programmer Should Know By Year<i class="icon-external"></i></a>：<br><noscript><img src="http://pic4.zhimg.com/6c35a1ff4d77a59f9ff41d276d97c3d8_b.jpg" data-rawwidth="553" data-rawheight="276" class="origin_image zh-lightbox-thumb" width="553" data-original="http://pic1.zhimg.com/6c35a1ff4d77a59f9ff41d276d97c3d8_r.jpg">图2：2014年计算机几种操作的潜伏期（latency）。</noscript><img src="//s1.zhimg.com/misc/whitedot.jpg" data-rawwidth="553" data-rawheight="276" class="origin_image zh-lightbox-thumb lazy" width="553" data-original="http://pic1.zhimg.com/6c35a1ff4d77a59f9ff41d276d97c3d8_r.jpg" data-actualsrc="http://pic4.zhimg.com/6c35a1ff4d77a59f9ff41d276d97c3d8_b.jpg">图2：2014年计算机几种操作的潜伏期（latency）。<br><br>从这些数据，我们可以看出，内存存取成为现代计算机性能的重要瓶颈。然而，这个问题在C++设计OOP编程范式的实现方式之初应该并未能考虑得到。现时的OOP编程有可能不缓存友好（cache friendly），导致有时候<b>并不能发挥硬件最佳性能</b>。以下描述一些箇中原因。<br><br><b>1. 过度封装</b><br><br>使用OOP时，会把一些复杂的问题分拆抽象成较简单的独立对象，通过对象的互相调用去实现方案。但是，由于对象包含自己封装的数据，一个问题的数据集会被分散在不同的内存区域。互相调用时很可能会出现数据的cache miss的情况。<br><br><b>2. 多态</b><br><br>在C++的一般的多态实现中，会使用到虚函数表。虚函数表是通过加入一次间接层来实现动态派送。但在调用的时候需要读取虚函数表，增加cache miss的可能性。基本上要支持动态派送，无论用虚函数表、函数指针都会形成这个问题，但如果类的数目极多，把函数指针如果和数据放在一起有时候可放缓问题。<br><br><b>3. 数据布局</b><br><br>虽然OOP本身并无限制数据的布局方式，但基本上绝大部分OOP语言都是把成员变量连续包裹在一段内存中。甚至使用C去编程的时候，也通常会使用到OOP或Object-based的思考方式，把一些相关的数据放置于一个struct之内：<br><div class="highlight"><pre><code class="language-text">struct Particle {
+    Vector3 position;
+    Vector4 velocity;
+    Vector4 color;
+    float age;
+    // ...
+};
+</code></pre></div><br>即使不使用多态，我们几乎不加思索地会使用这种数据布局方式。我们通常会以为，由于各个成员变量都紧凑地放置在一起，这种数据布局通常对缓存友好。然而，实际上，我们需要考虑数据的存取模式（access pattern）。<br><br>在OOP中，通过封装，一个类的各种功能会被实现为多个成员函数，而每个成员函数实际上可能只会存取少量的成员变量。这可能形式非常严重的问题，例如：<br><div class="highlight"><pre><code class="language-text">for (Particle* p = begin; p != end; ++p)
+    p-&gt;position += p-&gt;velocity * dt; // 或 p-&gt;SimulateMotion(dt);
+</code></pre></div>在这种模式下，实阶上只存取了两个成员变量，但其他成员变量也会载入缓存造成浪费。当然，如果在迭代的时候能存取尽量多的成员变量，这个问题可能并不存在，但实际上是很困难的。<br><br>如果采用传统的OOP编程范式及实现方式，数据布局的问题几乎没有解决方案。所以在[1]里，作者提出，在某些情况下，应该放弃OOP方式，以数据的存取及布局为编程的考虑重中，称作面向数据编程（data-oriented programming, DOP）。<br><br>有关DOP的内容就不在此展开了，读者可参考[1]，还有[3]作为实际应用例子。<br><br>[1] ALBRECHT, “Pitfalls of Object Oriented Programming”, GCAP Australia, 2009. <a href="http://research.scee.net/files/presentations/gcapaustralia09/Pitfalls_of_Object_Oriented_Programming_GCAP_09.pdf" class=" external" target="_blank" rel="nofollow noreferrer"><span class="invisible">http://</span><span class="visible">research.scee.net/files</span><span class="invisible">/presentations/gcapaustralia09/Pitfalls_of_Object_Oriented_Programming_GCAP_09.pdf</span><span class="ellipsis"></span><i class="icon-external"></i></a><br>[2] Hennessy, John L., and David A. Patterson. <i>Computer architecture: a quantitative approach</i>. Elsevier, 2012.<br>[3] COLLIN, “Culling the Battlefield”, GDC 2011. <a href="http://dice.se/wp-content/uploads/CullingTheBattlefield.pdf" class=" external" target="_blank" rel="nofollow noreferrer"><span class="invisible">http://</span><span class="visible">dice.se/wp-content/uplo</span><span class="invisible">ads/CullingTheBattlefield.pdf</span><span class="ellipsis"></span><i class="icon-external"></i></a>
+<a href="/question/20275578/answer/27046327" class="toggle-expand">显示全部</a>
+<div class="fixed-summary-mask"></div>
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="6141503-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2014-06-20" target="_blank" href="/question/20275578/answer/27046327">编辑于 2014-06-21</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>29 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="953585"
+data-atoken="14581053"
+data-collapsed="0"
+data-created="1338783020"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="198.130496346"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-953585"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">116</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$feng-dong"
+class="zm-item-link-avatar"
+href="/people/feng-dong">
+<img src="http://pic1.zhimg.com/1d3b18c14_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic3.zhimg.com/1d3b18c14_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$feng-dong" href="/people/feng-dong">冯东</a>，<strong title="Adobe 程序员" class="zu-question-my-bio">Adobe 程序员</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="116">
+
+<span class="voters">
+<a data-tip="p$t$42195" href="http://www.zhihu.com/people/42195" class="zg-link" title="Gladius">Gladius</a>、<a data-tip="p$t$ltaoist" href="http://www.zhihu.com/people/ltaoist" class="zg-link" title="莫宇诚">莫宇诚</a>、<a data-tip="p$t$leodt" href="http://www.zhihu.com/people/leodt" class="zg-link" title="LeoDT">LeoDT</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">面向对象的弊端在于作为一种建模技术没有很好的定义自己的适用范围。面向对象脱胎的环境有两个重要因素，一是基于 WIMP (Window, Icon, Menu, Pointer) 的图形化界面，二是早期提供图形界面接口的机器缺乏代码级别之外的组件管理方式 (比如 Unix 的进程和 IPC)。<br><br>面向对象在 WIMP 的环境中是很必要也是很成功的。原因是 WIMP 环境需要重量的实现继承提供的重用，WIMP 的对象种类能很好的被单继承模拟，WIMP 的属性和类别容易区分。而面向对象扩展到 WIMP 之外的环境中就失败了：<ol><li>实际世界是多纬度的，属性和类别不好区分。红苹果是 color 属性为 red 的苹果，还是 Apple 的子类？</li><li>实际世界的工具是用来完成任务的。而不是象 WIMP 那样构建一个虚拟的空间化界面。</li><li>《人月神话》指出，编写 reusable code 比编写普通 code 至少要多花三倍的工作量。而面向对象的模糊了代码的重用和使用。使被重用的代码的依赖复杂化。导致很多不适合被重用的代码被重用。编写代码时要过分考虑重用的可能性。</li><li>其它管理复杂度的机制越来越流行。</li></ol>
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="953585-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2012-06-04" target="_blank" href="/question/20275578/answer/14581053">编辑于 2012-06-04</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>23 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="6108357"
+data-atoken="26970925"
+data-collapsed="0"
+data-created="1403077124"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="117.124338908"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-6108357"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">73</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$jianru-lin"
+class="zm-item-link-avatar"
+href="/people/jianru-lin">
+<img src="http://pic1.zhimg.com/a064911c2_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic3.zhimg.com/a064911c2_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$jianru-lin" href="/people/jianru-lin">林建入</a>，<strong title="软件设计" class="zu-question-my-bio">软件设计</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="73">
+
+<span class="voters">
+知乎用户、<a data-tip="p$t$huang-nan-84" href="http://www.zhihu.com/people/huang-nan-84" class="zg-link" title="黄楠">黄楠</a>、知乎用户
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">指着 C++/Java 说面向对象是错的，就像指着一个太监说全世界的男人都不行一样。<br><br>问题不是出在“面向对象”上，而是出在“如何实现面向对象”上。许多人谈论面向对象，都是在谈论 C++ 的面向对象，或者 Java 的面向对象。这是因为许多人第一次接触面向对象这一编程理念，就是来源于这些 C 家族的后继语言。但仔细阅读他们的观点，会发现尽管他们谈论的观点来自实际的工程项目体验，有一定的道理，但是<b>他们似乎并没有意识到自己在谈论的只是“C++/Java 实现的面向对象”有多糟糕，却把它当成了“面向对象思想本身”有多糟糕</b>。<br><br>关于 C++/Java 实现面向对象带来的弊端已经有许多人回答了。我并没有什么新鲜的观点。但是关于面向对象本身，这个问题下面的大多数答案其实都没有真正谈及。<br><br><b>因为如果你要考察面向对象思想本身，那必须要考察 Smalltalk 这门语言。</b>因为全世界第一次出现面向对象编程这一思想，就来自这门语言。<br><br>当然，为了避免误解，我应当指明，object、instance、class 这些思想并非是由 Smalltalk 所创造的，而是出现得很早，甚至在 lisp 出现后不久就有了相关讨论，并且也有了一些零散的实验性实现例如 Simula 语言，但 Smalltalk 的作者 Alan Kay 是第一个系统性提出的 Object-Oriented-Programming 的人。因此，现在也把 Smalltalk 视为面向对象编程的真正开端。<br><br>一些朋友可能会奇怪，说这些有什么意义呢？C++/Java 难道不是比 Smalltalk 更厉害得多吗——毕竟你看 Smalltalk 好像都没人用了，而 C++/Java 却享誉世界。就算是 Smalltalk 是面向对象编程的立派者，这对我们现在讨论面向对象思想又有什么影响，<b>难道我用 C++/Java 所理解的面向对象还和 Smalltalk 的不同？您还真别说，确实是不同。</b><br><br>在 Smalltalk 里的“对象”实际上是一种高级的动态模块。一个 Smalltalk 程序，是由一系列这样的高级动态模块构成的。你可以在程序运行时（注意是运行时，而不是编译时）动态的修改、替换任意模块，而无需停止整个程序。<br><br>之所以在模块二字前加上“高级”和“动态”，实际上是对比其他非面向对象语言而言的。<br><br>例如 C 语言中你可以把 printf() 理解为一个控制台输出模块。但是这样的模块，用起来容易，却不太灵活——如果你有实际的编程经验肯定能有所体会。例如，你能够在程序运行的过程中，动态的替换掉 printf() 这个模块吗？你能够动态的改变 printf() 这个模块的代码吗？你能够动态的获取 printf() 这个模块的基本信息吗（参数列表，返回值甚至代码）？<br><br>别说，你还真的能，因为你可以通过各种技巧间接的实现这一点，但是这这是你的发明创造，而不是 C 语言本身的特性。所以我们可以知道，C 语言对模块的支持仅仅止步于函数级别。<br><br>Smalltalk 的亮点就在于，它在语言层面引入了一种称为“对象”的高级动态模块系统。一个 Smalltalk 程序由一系列的高级动态模块构成，每个模块之间通过通信进行协同。<br><br>也就是说，<b>Smalltalk 所秉承的面向对象思想使得整个软件系统的可分割性和可组合性迈上了一个新台阶。这是面向对象思想的光辉所在。</b><br><br>现在我们回过头来看看 C++ 和 Java 中的面向对象。<br><br>事实上，C++ 和 Java 在实现面向对象的路途上遇到的第一道坎是他们本身都是静态类型的语言。也就是说，这类语言的设计信条是一切结构皆须预先描述，因为编译器要检查。于是没什么悬念的的就走上了 Class-based OOP 这条路（另一条路是 Prototype-based OOP）。<br><br>Class-based OOP 的一个特征是对象的结构需要预先声明，并且在运行过程中不允许改变—— C++ 和 Java 的作者有一千个理由这么干，最基本的原因就是性能考虑——但这样做的代价首先就削弱了系统的动态性。<br><br>更糟糕的是，C++ 和 Java 中，连对象的可替换性也需要预先声明。我这么说一部分朋友可能没办法马上反应过来。其实就是说，在 Smalltalk 中，我们可以用任何一个对象随意替换掉另外一个，只要他们对外界而言行为一致，那么系统依然可以正常运行，这一点，在大家更熟悉的 Ruby、Javascript 等语言中，被称为 Duck-Type 概念。<br><br>在 C++ 和 Java 中，你不能随意找个对象 x 来替换掉另外一个对象 y。即使他们拥有完全相同的行为也不行。因为 C++ 和 Java 是 Class-based OOP 所以连可替换性也需要预先声明！这种声明方式就是让无数人潸然泪下的——继承！<br><br>即使一个对象 x 和 y 的行为是完全一样的，你也不能用 x 去替换 y。允许你替换的唯一前提是，x 被声明为继承自 y 的。<br><br>在有空的时候我们可以再详细讨论一下继承。但是在这里，<b>简单的来说，“继承”是一人分饰两角的典型——它既作为代码复用的一种手段，同时又成为了可替换性的一种声明。这种设计非常失败，难以使用到直接导致了面向对象在 C++ 和 Java 中成为了一个阉割后的太监。</b><br><br>为了弥补继承的这种缺陷，于是引入了 Interface （只表明可替换性，不复用代码），但这也改变不了什么了。毕竟 Interface 竟然也开始互相玩起了继承的游戏……<br><br>于是最后，我们看到，尽管 C++ 和 Java 一直声称自己是面向对象的，但是和 Smalltakl 之类的语言一比，这种面向对象的实现几乎是个去势后的太监，他们敢自称为男人真是个笑话。<br><br>所以，如果可以说得直白一些的话，C++ 本质上只能算是一个带有少量面向对象支持的 C，而 Java 更像是一个去掉了指针，带上了垃圾回收的 C++。<br><br>但再怎么说，面向对象这回事，在 C++ 和 Java 之类的语言里简直都只能算个点缀（可怕的是这个点缀会花掉你 70% 的学习时间）。<br><br>对于面向对象。在结构层次，对象之所以高级，是因为它具有动态性。它是在程序运行中动态构造（可以构造一个，也可以构造一百个），动态销毁的；在抽象层次，对象之所以高级，是因为它具有隔离性。它并不直接依赖于另一个对象，而是通过通信来与之协作的。另外，对象的可替换性也是系统弹性的关键。<br><br>当然我们都知道，实现上述特性在目前的编译技术条件下，很难保证高性能。所以这就是为什么 C++/Java 之类的语言要自我阉割的原因。这里面不得不说确实是透着一丝无奈。<br><br>但是既然是讨论面向对象，咱们还是区别清楚。不要因为 C++ 和 Java 坏了你的心情，你就从此再也不看面向对象一眼了。这样他们会很委屈的。
+<a href="/question/20275578/answer/26970925" class="toggle-expand">显示全部</a>
+<div class="fixed-summary-mask"></div>
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="6108357-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/26970925">发布于 2014-06-18</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="1646151"
+data-atoken="16290012"
+data-collapsed="0"
+data-created="1362403398"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="32.1275069665"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-1646151"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">19</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a class="zm-item-link-avatar"
+href="javascript:void(0);">
+<img src="http://pic1.zhimg.com/da8e974dc_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic2.zhimg.com/da8e974dc_s.jpg" />
+</a>
+
+
+
+知乎用户，<strong title="永远不懂得 OOD。" class="zu-question-my-bio">永远不懂得 OOD。</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="19">
+
+<span class="voters">
+<a data-tip="p$t$jun-lee-22-87" href="http://www.zhihu.com/people/jun-lee-22-87" class="zg-link" title="jun lee">jun lee</a>、<a data-tip="p$t$wang-jason-10-6" href="http://www.zhihu.com/people/wang-jason-10-6" class="zg-link" title="王Jason">王Jason</a>、知乎用户
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">很多时候为了OO而OO就是它最大的弊端。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="1646151-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/16290012">发布于 2013-03-04</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>1 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5929409"
+data-atoken="26543719"
+data-collapsed="0"
+data-created="1402128515"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="19.1243969346"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5929409"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">14</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$kubisoft"
+class="zm-item-link-avatar"
+href="/people/kubisoft">
+<img src="http://pic2.zhimg.com/84baed7bd5c2d7c7492e4e7b86879622_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic1.zhimg.com/84baed7bd5c2d7c7492e4e7b86879622_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$kubisoft" href="/people/kubisoft">kubisoft</a>，<strong title="慢慢下围棋的作者(请用微信扫一扫头像)" class="zu-question-my-bio">慢慢下围棋的作者(请用微信扫一扫头像)</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="14">
+
+<span class="voters">
+<a data-tip="p$t$fengyh" href="http://www.zhihu.com/people/fengyh" class="zg-link" title="yh feng">yh feng</a>、<a data-tip="p$t$jiangtiger" href="http://www.zhihu.com/people/jiangtiger" class="zg-link" title="蒋寅">蒋寅</a>、知乎用户
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">大部分问题是面向对象无法解决的。能够采用面向对象简化模型得到代码重用性的时候，就用；不能的时候，就放弃，不要到处都用。<br>有的场合下，面向对象会增加代码复杂度，增加维护的困难。<br>除了面向对象，我们还有很多办法来实现我们要做的功能。不谈更加高端大气的函数式编程，其实用一串switch case或者else if就可以实现，代码还简单。<br>所有需要的东西都放在一起，同一个文件里面同一段代码，阅读起来并不困难，很整齐。某个case下面太长的时候，也可以独立出来包装成一个函数调用；你爱放在同一个文件里面还是另开一个文件都可以。<br>可是面向对象是一个很重量级的方法。你得设计类的继承关系。得写类的声明，得实现不同的虚方法；实现时要注意是否要调用父类的方法。调试的时候经常搞不清楚到底执行哪个类的虚方法了。而用一大堆switch case，语句执行顺序一目了然。<br>可能还是觉得代码层级过多？有很多办法可以整理得更干净。用了面向对象，省了switch case，却要写更多的virtual function的声明和实现。<br>业务逻辑本身是复杂的，无法避免。没有银弹。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5929409-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/26543719">发布于 2014-06-07</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5924154"
+data-atoken="26530910"
+data-collapsed="0"
+data-created="1402105811"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="6.1243983303"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5924154"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">14</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a class="zm-item-link-avatar"
+href="javascript:void(0);">
+<img src="http://pic2.zhimg.com/da8e974dc_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic3.zhimg.com/da8e974dc_s.jpg" />
+</a>
+
+
+
+知乎用户，<strong title="喵～～～" class="zu-question-my-bio">喵～～～</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="14">
+
+<span class="voters">
+<a data-tip="p$t$ltaoist" href="http://www.zhihu.com/people/ltaoist" class="zg-link" title="莫宇诚">莫宇诚</a>、<a data-tip="p$t$chen-hong-92-74" href="http://www.zhihu.com/people/chen-hong-92-74" class="zg-link" title="陈红">陈红</a>、<a data-tip="p$t$lin-yi-66" href="http://www.zhihu.com/people/lin-yi-66" class="zg-link" title="林毅">林毅</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">作为C原教旨教徒和C＋+一生黑以及从不用类的Python党怒答。有函数有数据结构就可以了，面向对象就是个骗局………
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5924154-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/26530910">发布于 2014-06-07</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>11 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5931290"
+data-atoken="26548179"
+data-collapsed="0"
+data-created="1402137324"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="20.1243903435"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5931290"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">13</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a class="zm-item-link-avatar"
+href="javascript:void(0);">
+<img src="http://pic4.zhimg.com/da8e974dc_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic4.zhimg.com/da8e974dc_s.jpg" />
+</a>
+
+
+
+知乎用户，<strong title="手工业者 2.0" class="zu-question-my-bio">手工业者 2.0</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="13">
+
+<span class="voters">
+<a data-tip="p$t$xi-yang-86-73" href="http://www.zhihu.com/people/xi-yang-86-73" class="zg-link" title="Xi Yang">Xi Yang</a>、<a data-tip="p$t$fwolf" href="http://www.zhihu.com/people/fwolf" class="zg-link" title="Fwolf">Fwolf</a>、<a data-tip="p$t$zhi-hu-19-57-72" href="http://www.zhihu.com/people/zhi-hu-19-57-72" class="zg-link" title="支呼">支呼</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix"><b>不忘初心，方得始终。</b><br><br>前面几个答案都说到了点子上：OOP最大的弊端，就是很多程序员已经忘记了OOP的初心，潜意识中把OOP教条主义化（如同对GOTO语句的禁忌一般），而不是着眼于OOP着力达到的、更本质的目标，如：<br><br>- 改善可读性<br>- 提升重用性<br><br>但是OOP最重要的目标，其实是OCP，即「<a href="http://baike.baidu.com/view/866233.htm" class=" wrap external" target="_blank" rel="nofollow noreferrer">开闭原则<i class="icon-external"></i></a>」。这一点很多答案都没有提到。<br><br><blockquote>遵循开闭原则设计出的模块具有两个主要特征：<br>（1）对于扩展是开放的（Open for extension）。这意味着模块的行为是可以扩展的。当应用的需求改变时，我们可以对模块进行扩展，使其具有满足那些改变的新行为。也就是说，我们可以改变模块的功能。<br>（2）对于修改是关闭的（Closed for modification）。对模块行为进行扩展时，不必改动模块的源代码或者二进制代码。模块的二进制可执行版本，无论是可链接的库、DLL或者.EXE文件，都无需改动。</blockquote><br>这就是为什么会有「用多态代替switch」的说法。在应该使用多态的地方使用switch，会导致：<br><br>1 - 违反「开放扩展」原则。假如别人的switch调用了你的代码，你的代码要扩展，就必须在别人的代码里，人工找出每一个调用你代码的switch，然后把你新的case加进去。<br>2 - 违反「封闭修改」原则。这是说，被switch调用的逻辑可能会因为过于紧密的耦合，而无法在不碰switch的情况下进行修改。<br><br>但是<b>OCP不是免费</b>的。如果一个模块根本没有扩展的需求，没有多人协作的需求，花时间达成OCP又有什么意义呢？设计类关系的时候忘记了OOP的初心，可能就会写出很多没有帮助的类，白白浪费人力和运行效率。<br><br>所以，假如所有代码都是你一个人维护，没有什么扩展的需求，那么多用一些switch也未尝不可；假如你的代码是要被别人使用或者使用了别人的代码，OOP很可能就是你需要用到的工具。<br><br>除了OOP，Type class和Duck Typing都是可以帮助你达成OCP原则的工具。当然，如果你使用的语言是Java，这两种工具都不用想了。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5931290-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2014-06-07" target="_blank" href="/question/20275578/answer/26548179">编辑于 2014-06-08</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="6155282"
+data-atoken="27073776"
+data-collapsed="0"
+data-created="1403309189"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="12.124324786"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-6155282"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">6</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$diamondtin"
+class="zm-item-link-avatar"
+href="/people/diamondtin">
+<img src="http://pic3.zhimg.com/fd711479b_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic4.zhimg.com/fd711479b_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$diamondtin" href="/people/diamondtin">田乐</a>，<strong title="理想主义者，完美主义者，前后端Web程序员，Beijing Open Party组织者，a.k.a. Tin，diamondtin" class="zu-question-my-bio">理想主义者，完美主义者，前后端Web程序…</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="6">
+
+<span class="voters">
+<a data-tip="p$t$zhi-hu-19-57-72" href="http://www.zhihu.com/people/zhi-hu-19-57-72" class="zg-link" title="支呼">支呼</a>、知乎用户、<a data-tip="p$t$dufujun" href="http://www.zhihu.com/people/dufujun" class="zg-link" title="杜福君">杜福君</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">OO 一方面是一个过载的概念（包含了很多广义的最佳实践），另一方面 OO 又被很多误解所包围。从我个人经历的角度，这些地方值得注意。<br><ul><li>OO 是一个与时俱进的概念，我们不能绝对的讨论最早提出 OO 理论的人所谈论的那个 OO。我们还要讨论后来对 OO 阐述的不同角度，或者说 OO 的不同流派。我比较支持 <a class=" wrap external" href="http://en.wikipedia.org/wiki/Ward_Cunningham" target="_blank" rel="nofollow noreferrer">Ward Cunningham<i class="icon-external"></i></a> 流派，他的流派也就是后来的 Martin Fowler, Kent Beck, Robert C Martin 所阐述的那个 OO。因为这个流派更注重代码和人的关系（后来也就产生了 Agile，也是这堆人），重构和模式这种长期关注代码设计的实践在这种 OO 流派中非常流行。我个人觉得咱们大学时候学的那些 OOP 的东西太抽象，给理解增加了难度。模式还有重构让我们重新回归到实践上来，具象的讨论 OO。</li><li>编程中的一个难题是状态的维护。我们常见的 OO，面向过程，声明式编程（包括了函数式编程）这些流派都在研究如何让状态可控。现在比较流行的 OO 和函数式编程都有成熟的模式去管理状态。而且殊路同归的是用面相函数的方式组合出 OO 的代码是完全可行的。有时我觉得无非是自底向上和自顶向下分析的不同而已。都是一个抽象的过程，我们都希望减少 side effects。</li><li>面试的时候如果你想显的比较有档次，我推荐你和对方说 <a class=" wrap external" href="http://en.wikipedia.org/wiki/Solid_%28object-oriented_design%29" target="_blank" rel="nofollow noreferrer">SOLID (object-oriented design)<i class="icon-external"></i></a> 原则，<a href="http://martinfowler.com/bliki/TellDontAsk.html" class=" wrap external" target="_blank" rel="nofollow noreferrer">TellDontAsk 原则，<i class="icon-external"></i></a>还有 <a href="http://en.wikipedia.org/wiki/Composition_over_inheritance" class=" wrap external" target="_blank" rel="nofollow noreferrer">Composition over inheritance<i class="icon-external"></i></a> 。因为这个是大部分满口 OOP 的人天天都在做错的事情，你有没有拿这些基本的观点去衡量你的 OO 设计是否优秀？每个支持 OOP 的语言有自己的取舍，但是你会发现这个语言里面好的代码会遵从这个原则。类、接口、继承是个坑，我们不能讨论哪个语言在这方面设计的完美。但是我们可以问问自己你是否错误的使用了继承实现代码复用？是否可以使用组合来实现复用？对象之间是否只有协作，而没有依赖互相的细节（Tell Don't Ask）？如果你讲了这些原则，那么对方应该知道你是一个知道 know why 的人，而不是仅限 know what and how。一上来就说 OO 三原则是封装，继承，多态的，我看这也就是停留在大学生的水平了。<br></li><li>OOP 是一个方法论，不能过于务虚。最好的方式就是根据一个具体的业务问题让不同的程序员写自己的抽象（分解为对象），然后大家一起讨论一下到底谁的抽象更好。时间会说明问题，一个好的 OO 抽象可以让你的代码长期的容易维护。而且一个问题显然有很多好的抽象，常开开眼是很好的。推荐阅读 DHH 笔伐 hexagonal design 的这个线索 <a href="https://gist.github.com/dhh/4849a20d2ba89b34b201" class=" external" target="_blank" rel="nofollow noreferrer"><span class="invisible">https://</span><span class="visible">gist.github.com/dhh/484</span><span class="invisible">9a20d2ba89b34b201</span><span class="ellipsis"></span><i class="icon-external"></i></a> ，里面阐述了一个非常复杂但是优雅的 OO 设计，但是所有的人都承认这个设计是很二的。这种辩证的讨论一个具体问题的过程非常锻炼你对代码设计的 critical thinking。</li><li>请不要陷入一些常见的 troll：不要讨论语言的 OOP 具体实现的细节的优劣；不要选择否定 OOP 的某个细节就否定 OOP 的思路，你的目的应该是博取所长；不要把性能搬出来，这是个驴唇不对马嘴的东西，因为每个方法论都有它的问题域（我还不相信确定性呢）；</li><li>OO 作为方法论，他的核心目标：代码可复用，代码容易维护（容易理解，容易维护，容易改变）。</li></ul>
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="6155282-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2014-06-21" target="_blank" href="/question/20275578/answer/27073776">编辑于 2014-06-21</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="953724"
+data-atoken="14581400"
+data-collapsed="0"
+data-created="1338786038"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="6.1305015456"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-953724"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">3</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$xiaoshiliaoliao"
+class="zm-item-link-avatar"
+href="/people/xiaoshiliaoliao">
+<img src="http://pic1.zhimg.com/da8e974dc_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic2.zhimg.com/da8e974dc_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$xiaoshiliaoliao" href="/people/xiaoshiliaoliao">小时了了</a>，<strong title="程序员一枚" class="zu-question-my-bio">程序员一枚</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="3">
+
+<span class="voters">
+知乎用户、<a data-tip="p$t$YenvY" href="http://www.zhihu.com/people/YenvY" class="zg-link" title="YenvY">YenvY</a>、知乎用户
+</span>
+
+
+<span>赞同</span>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">面向对象只是一种组织逻辑的方式，类关系复杂说明逻辑没划分清楚。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="953724-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/14581400">发布于 2012-06-04</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>1 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5925955"
+data-atoken="26535200"
+data-collapsed="0"
+data-created="1402113588"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="-4.8756021478"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5925955"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">15</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$jiang-zhao-ning"
+class="zm-item-link-avatar"
+href="/people/jiang-zhao-ning">
+<img src="http://pic3.zhimg.com/9557affca_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic3.zhimg.com/9557affca_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$jiang-zhao-ning" href="/people/jiang-zhao-ning">姜兆宁</a>，<strong title="Yeelight智能照明CEO" class="zu-question-my-bio">Yeelight智能照明CEO</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="15">
+
+<span class="voters">
+<a data-tip="p$t$li-gou-dan-73" href="http://www.zhihu.com/people/li-gou-dan-73" class="zg-link" title="李狗蛋">李狗蛋</a>、<a data-tip="p$t$Arthur200000" href="http://www.zhihu.com/people/Arthur200000" class="zg-link" title="王铭烨 Arthur2e5">王铭烨 Arthur2e5</a>、<a data-tip="p$t$ni-ou-91" href="http://www.zhihu.com/people/ni-ou-91" class="zg-link" title="尼欧">尼欧</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">容易走神，背对对象会好很多
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5925955-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/26535200">发布于 2014-06-07</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>3 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5992729"
+data-atoken="26695937"
+data-collapsed="0"
+data-created="1402457468"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="14.1243767495"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5992729"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">8</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$tom-zhu"
+class="zm-item-link-avatar"
+href="/people/tom-zhu">
+<img src="http://pic2.zhimg.com/02c80722c_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic1.zhimg.com/02c80722c_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$tom-zhu" href="/people/tom-zhu">Tom Zhu</a>，<strong title="One day we'll all understand" class="zu-question-my-bio">One day we'll all understand</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="8">
+
+<span class="voters">
+<a data-tip="p$t$nainaide" href="http://www.zhihu.com/people/nainaide" class="zg-link" title="王广裕">王广裕</a>、<a data-tip="p$t$shi-wu" href="http://www.zhihu.com/people/shi-wu" class="zg-link" title="石武">石武</a>、<a data-tip="p$t$an-yan-58" href="http://www.zhihu.com/people/an-yan-58" class="zg-link" title="铵盐">铵盐</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">本来不想答这道题的，但我在某高票答案下留了反对意见，为了表示我不是喷子，还是留点干货吧。<br><br>面向对象模式，对现在的计算平台而言，最大的问题不是程序设计思想的问题（这个由架构师去解决），也不是性能低下的问题（绝大部分情况下计算平台都性能过剩），而是多核多线程情况下的资源竞争，这个是很难解决的，所以大家纷纷开始重新发现面向过程编程模式。<br><br>为什么这么说呢？在多线程模型下，一个对象可能同时被几个线程访问，内部变量被修改来修改去，造成程序执行结果无法预计。解决方法只能是加锁，意味着多车道突然变成单车道，严重影响执行性能。<br><br>面向对象从设计之初，就是针对单线程环境的设计模式，在多线程环境下落伍了，就是这么简单。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5992729-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/26695937">发布于 2014-06-11</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>7 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="6002201"
+data-atoken="26718322"
+data-collapsed="0"
+data-created="1402498061"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="6.1243742633"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-6002201"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">3</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$qwertyuiopasdfghjkl"
+class="zm-item-link-avatar"
+href="/people/qwertyuiopasdfghjkl">
+<img src="http://pic2.zhimg.com/832fabcd9_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic4.zhimg.com/832fabcd9_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$qwertyuiopasdfghjkl" href="/people/qwertyuiopasdfghjkl">刘德华</a>，<strong title="无聊的人" class="zu-question-my-bio">无聊的人</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="3">
+
+<span class="voters">
+<a data-tip="p$t$mu-rong-yun" href="http://www.zhihu.com/people/mu-rong-yun" class="zg-link" title="慕容云">慕容云</a>、<a data-tip="p$t$jonyzhu" href="http://www.zhihu.com/people/jonyzhu" class="zg-link" title="朱敏">朱敏</a>、<a data-tip="p$t$jack-lu-1" href="http://www.zhihu.com/people/jack-lu-1" class="zg-link" title="Jack Lu">Jack Lu</a>
+</span>
+
+
+<span>赞同</span>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">“对象”的概念适用于“一个一个”的东西，当面对“一坨一坨的”、“一滩一滩连起来的”、“无处不在的”、“无限长的一条”、“分不清个的”东西时，就晕了。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="6002201-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/26718322">发布于 2014-06-11</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>2 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="4270634"
+data-atoken="22660751"
+data-collapsed="0"
+data-created="1392833137"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="10.1249969006"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-4270634"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">5</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$qwety-ed"
+class="zm-item-link-avatar"
+href="/people/qwety-ed">
+<img src="http://pic3.zhimg.com/fe31cf99f_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic4.zhimg.com/fe31cf99f_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$qwety-ed" href="/people/qwety-ed">qwety ed</a>，<strong title="it from bit" class="zu-question-my-bio">it from bit</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="5">
+
+<span class="voters">
+<a data-tip="p$t$a-di-ya" href="http://www.zhihu.com/people/a-di-ya" class="zg-link" title="阿迪亚">阿迪亚</a>、<a data-tip="p$t$bcccony" href="http://www.zhihu.com/people/bcccony" class="zg-link" title="可白">可白</a>、<a data-tip="p$t$si-ma-zhong-9" href="http://www.zhihu.com/people/si-ma-zhong-9" class="zg-link" title="司马忠">司马忠</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">面向对象得目标是大规模重用代码。<br>面向对象的手段是绑定结构和函数。<br>面向对象的哲学含义是给客体下定义来完成形式化抽象。 目的说白了就是为了尽可能重用代码来减少程序员工作。但是矛盾的地方在于，真实世界中的客体的定义随着主体的看法而改变，换句话，不存在固定的形式化抽象，一切都要符合环境（上下文）。最简单的例子就是，中文词的含义天天变，只有根据环境知识才能知道是什么含义。<br>而代码是为了具体问题而出现的，所以不存在通用抽象，也就不存在可以无限重用的定义和逻辑。<br>所以对象也就是用于计算的模型而已，技术手段是正确的（给数据绑定操作） 但是对于目标（大规模代码重用）相去甚远，能重用的应该只有为了解决问题的方法，而不是只有模型。<br><br>另外的难点，不同人为了解决相似问题，开发出来的模型可以十万八千里，为了重用模型，修改之后又能适应新问题，于是这叫泛化，它估计你去制造全能模型，但是不仅难，还没法向后兼容，有时候就硬是要把飞机做成鱼……这就是面向对象思维的硬伤，创造出一个大家都懂，大家都认为对，大家都能拿去用的模型太难！<br><br>更加合理的设计理念应该还是 提供机制而不限制策略 所以从这一点上来看，提供一个常用的函数库要比精心设计复杂的对象模型要好的多。<br><br>更进一步，理想状态是全世界共享一种函数式语言，共享一份源代码，并对问题分类，将所用所有函数按照问题进行整理，只有这样感觉才能彻底避免重新发明轮子。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="4270634-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/22660751">发布于 2014-02-20</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>2 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5528829"
+data-atoken="25575264"
+data-collapsed="0"
+data-created="1400001219"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="6.1245290634"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5528829"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">5</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$peytoncai"
+class="zm-item-link-avatar"
+href="/people/peytoncai">
+<img src="http://pic4.zhimg.com/afc4273d8_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic1.zhimg.com/afc4273d8_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$peytoncai" href="/people/peytoncai">PeytonCai</a>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="5">
+
+<span class="voters">
+<a data-tip="p$t$7_______" href="http://www.zhihu.com/people/7_______" class="zg-link" title="栖栖">栖栖</a>、知乎用户、<a data-tip="p$t$zhangguanjun" href="http://www.zhihu.com/people/zhangguanjun" class="zg-link" title="张冠军">张冠军</a>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix"><a href="http://dev.yesky.com/405/34480405.shtml" class=" wrap external" target="_blank" rel="nofollow noreferrer">名家吐槽：面向对象编程从骨子里就有问题<i class="icon-external"></i></a><br>我觉得只有封装和接口才是软件设计的精髓，这也应该是为什么GO语言了只实现了接口这个特性。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5528829-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2014-05-14" target="_blank" href="/question/20275578/answer/25575264">编辑于 2014-05-14</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5962391"
+data-atoken="26622847"
+data-collapsed="0"
+data-created="1402300884"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="10.1243863494"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5962391"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">5</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$jun-lee-22-87"
+class="zm-item-link-avatar"
+href="/people/jun-lee-22-87">
+<img src="http://pic2.zhimg.com/da8e974dc_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic2.zhimg.com/da8e974dc_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$jun-lee-22-87" href="/people/jun-lee-22-87">jun lee</a>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="5">
+
+<span class="voters">
+<a data-tip="p$t$a-di-ya" href="http://www.zhihu.com/people/a-di-ya" class="zg-link" title="阿迪亚">阿迪亚</a>、<a data-tip="p$t$fwolf" href="http://www.zhihu.com/people/fwolf" class="zg-link" title="Fwolf">Fwolf</a>、知乎用户
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">经历过多次需求变更的人，才能深刻理解面向对象的意义。<br>有的人项目做完后，人一走，这个项目就死了，后来人根本无法接手，一团麻的关系。别人只能重新写。需求一变，他能产生一堆BUG，弄的产品经理都不敢改需求了。<br><br>有的人，需求变更不怕，随便搞几下就可以了。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5962391-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/26622847">发布于 2014-06-09</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5959989"
+data-atoken="26617090"
+data-collapsed="0"
+data-created="1402292506"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="2.1243868611"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5959989"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">1</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$kevinshn"
+class="zm-item-link-avatar"
+href="/people/kevinshn">
+<img src="http://pic1.zhimg.com/da8e974dc_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic4.zhimg.com/da8e974dc_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$kevinshn" href="/people/kevinshn">KevinShn</a>，<strong title="一个普通的java程序员" class="zu-question-my-bio">一个普通的java程序员</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="1">
+
+<span class="voters">
+<a data-tip="p$t$dwhvan" href="http://www.zhihu.com/people/dwhvan" class="zg-link" title="dwhvan">dwhvan</a>
+</span>
+
+
+<span>赞同</span>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">就我个人而言，有时候会不知不觉用做Lib的思想去做应用，浪费了很多时间后，还会自己安慰一下自己，“以后说不定会用到这个功能，这是为了方便以后做扩展，万一以后要跟其它系统集成呢，以后，以后，以后。。。。。。“
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5959989-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2014-06-09" target="_blank" href="/question/20275578/answer/26617090">编辑于 2014-06-09</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5951348"
+data-atoken="26595982"
+data-collapsed="0"
+data-created="1402241026"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="6.1243900063"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5951348"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">3</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$sting-123"
+class="zm-item-link-avatar"
+href="/people/sting-123">
+<img src="http://pic3.zhimg.com/da8e974dc_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic4.zhimg.com/da8e974dc_s.jpg" />
+</a>
+
+
+
+<a data-tip="p$t$sting-123" href="/people/sting-123">Sting</a>，<strong title="程序员" class="zu-question-my-bio">程序员</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="3">
+
+<span class="voters">
+<a data-tip="p$t$kimi-wu" href="http://www.zhihu.com/people/kimi-wu" class="zg-link" title="kimi Wu">kimi Wu</a>、<a data-tip="p$t$Anghan" href="http://www.zhihu.com/people/Anghan" class="zg-link" title="天明">天明</a>、<a data-tip="p$t$li-yang-62-72" href="http://www.zhihu.com/people/li-yang-62-72" class="zg-link" title="李阳">李阳</a>
+</span>
+
+
+<span>赞同</span>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">解决所有复杂问题的不二法门是分而治之，不同的编程语言的做法不同，比如C是面向过程（程序=算法+数据结构），C++/Java是面向对象，Golang是基于连接和组合。面向对象编程的基本思路是先从问题中提取主要概念，然后用类表示这些概念，再用封装、继承、多态设计这些类，形成产品的基本组件。根据问题的实际需要，组合这些组件，从而形成整个产品。<br>面向对象编程的核心是封装、继承、多态。这三板斧中，封装和多态没什么问题。问题比较大的是继承，继承的主要意图是复用代码，但这种复用其实和高内聚低耦合的基本设计原则是矛盾的：哪些代码应该放入父类，哪些应该放在子类，边界常常是模糊的；而且，由于父类不论是接口设计和内部实现都会影响到子类，（甚至有时候为了满足某个子类的特定需求，常常在父类中添加私货，而有时候由于父类的实现考虑不周，也需要在子类中做workaround），导致在软件演化的过程中，对父类/接口的改进是很困难的。这就反过来要求程序员在最初设计接口/基类/继承体系的时候，需要对产品需求有非常深入的了解，而且希望在未来，这些需求比较稳定，不会发生非常大的变化。但是，在互联网/移动互联网时代，一切都变的非常快，崇尚试错、敏捷、快速迭代，面向对象编程构造出来的继承体系很难适应这种开发需求。<br>作为对比，我们可以看看Unix的代码复用思路。Unix推崇每个程序只解决一个问题，做到最好，然后提供丰富的输入/输出（即接口）跟外部交互。解决新的问题则通过组合不同的程序来完成。这种代码复用哲学产生的效果是惊人的，像grep, awk, wc, sed等一大堆Unix工具，这么多年来一直在用。这种哲学，其实就是基于连接和组合--Golang的核心语言特征。很有意思的是，Golang恰恰选择了不支持继承。而没有继承就谈不上面向对象，因此Golang是反对面向对象编程范式的。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5951348-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2014-06-08" target="_blank" href="/question/20275578/answer/26595982">编辑于 2014-06-08</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+
+itemscope itemtype="http://schema.org/Answer"
+data-aid="5941567"
+data-atoken="26572629"
+data-collapsed="0"
+data-created="1402201078"
+data-deleted="0"
+data-helpful="1"
+data-isowner="0"
+data-score="4.1243924762"
+
+
+>
+<a class="zg-anchor-hidden" name="answer-5941567"></a>
+
+
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">2</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+
+<div class="answer-head">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a class="zm-item-link-avatar"
+href="javascript:void(0);">
+<img src="http://pic1.zhimg.com/da8e974dc_s.jpg"
+class="zm-list-avatar"
+data-source="http://pic2.zhimg.com/da8e974dc_s.jpg" />
+</a>
+
+
+
+知乎用户
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+<div class="zm-item-vote-info " data-votecount="2">
+
+<span class="voters">
+<a data-tip="p$t$huangyunbin" href="http://www.zhihu.com/people/huangyunbin" class="zg-link" title="黄云斌">黄云斌</a>、<a data-tip="p$t$few-only" href="http://www.zhihu.com/people/few-only" class="zg-link" title="few only">few only</a>
+</span>
+
+
+<span>赞同</span>
+
+
+</div>
+</div>
+<div class="zm-item-rich-text" data-resourceid="290432" data-action="/answer/content">
+
+<div class="fixed-summary zm-editable-content clearfix">不管面向对象还是面向过程，解决问题都是要把一个大问题分割成一系列中问题，中问题再分割成小问题。<br><br>不同的仅仅是面向对象通过抽象思维，把解决中问题所需的条件都想明白了，只要提供标准的材料就能得到结果。面向过程没有这个抽象过程，每次都得回到小问题的层次重新解决一遍中问题。<br><br><br>接口是对象的子集，怎么拿接口来否定面向对象了。
+
+
+</div>
+
+</div>
+<a class="zg-anchor-hidden ac" name="5941567-comment"></a>
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20275578/answer/26572629">发布于 2014-06-08</a>
+</span>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>1 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+<div id="zh-question-collapsed-link" class="zu-question-collap-title" style="display:none" >
+<a href="javascript:;" name="expand" class="zg-link-gray" id="zh-question-collapsed-switcher">
+<span id="zh-question-collapsed-num">32</span> 个回答被折叠
+</a>
+（<a target="_blank" href="http://www.zhihu.com/question/20120168" class="zg-link-gray">为什么？</a>）
+</div>
+<div id="zh-question-collapsed-wrap" class="zh-question-answer-wrapper" style="display:none"></div>
+<a name="draft"></a>
+<div id="zh-question-answer-form-wrap" class="zh-question-answer-form-wrap" data-isabout="0">
+<div class="zm-editable-tip"></div>
+<div class="zm-editable-content"></div>
+</div>
+
+
+<!-- end of content -->
+</div>
+</div>
+<div class="zu-main-sidebar">
+
+
+<div class="zm-side-section">
+<div class="zm-side-section-inner">
+<div class="well login-reg-box">
+<span>知乎是一个真实的问答社区，在这里分享知识、经验和见解，发现更大的世界。<br>
+<a id="js-reg-with-mail-in-top" href="javascript:;">使用邮箱注册 &raquo;</a>
+</span>
+<div class="clearfix">
+<a id="js-reg-with-sina-in-top" target="_blank" class="zg-btn-red zg-left"><span class="icon-big-white-sina"></span>微博注册</a>
+<a id="js-reg-with-qq-in-top" target="_blank" class="zg-btn-blue zg-right"><span class="icon-big-white-qq" style="margin-right: 10px;"></span>QQ 注册</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="zm-side-section">
+<div class="zm-side-section-inner zg-gray-normal" id="zh-question-side-header-wrap">
+<button data-follow="q:m:button" class="follow-button zg-follow zg-btn-green" data-id="290432">关注</button>
+
+2660
+人关注该问题
+
+</div>
+</div>
+
+
+<div class="zm-side-section">
+<div class="zm-side-section-inner">
+<h3>相关问题</h3>
+<ul id="zh-question-related-questions" class="zh-question-related-questions" itemprop="relatedQuestion" itemscope itemtype="http://schema.org/ItemList">
+
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Question"><a class="question_link" href="/question/20603416">面向对象编程的重要性在哪？</a> <span class="num">13 个回答</span><meta itemprop="followerCount" content="160" /></li>
+
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Question"><a class="question_link" href="/question/20185591">怎样才是纯面向对象编程语言？</a> <span class="num">4 个回答</span><meta itemprop="followerCount" content="30" /></li>
+
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Question"><a class="question_link" href="/question/19582024">怎样理解或评价面向对象的编程技术？</a> <span class="num">10 个回答</span><meta itemprop="followerCount" content="135" /></li>
+
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Question"><a class="question_link" href="/question/19721380">没有 C++ 基础，直接通过 Java 来学习面向对象编程合适吗？</a> <span class="num">36 个回答</span><meta itemprop="followerCount" content="113" /></li>
+
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Question"><a class="question_link" href="/question/21080991">没有女朋友的程序员，如何进行面向“对象”的编程（OOP）？</a> <span class="num">5 个回答</span><meta itemprop="followerCount" content="16" /></li>
+
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Question"><a class="question_link" href="/question/20405888">如何理解「面向对象编程的精髓在于将操作绑定在数据上」？</a> <span class="num">19 个回答</span><meta itemprop="followerCount" content="239" /></li>
+
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Question"><a class="question_link" href="/question/20925030">怎么样知道自己有没有掌握面向对象编程的思想？</a> <span class="num">3 个回答</span><meta itemprop="followerCount" content="22" /></li>
+
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Question"><a class="question_link" href="/question/20252436">学习编程语言最好的方法是什么？</a> <span class="num">32 个回答</span><meta itemprop="followerCount" content="1232" /></li>
+
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Question"><a class="question_link" href="/question/19635571">HTML5 是一门编程语言吗？</a> <span class="num">28 个回答</span><meta itemprop="followerCount" content="105" /></li>
+
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Question"><a class="question_link" href="/question/20177988">JavaScript 的面向对象的开发能否实现多态？</a> <span class="num">8 个回答</span><meta itemprop="followerCount" content="23" /></li>
+
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="zm-side-section">
+<div class="zm-side-section-inner">
+
+
+
+
+<a id="js-sidebar-app-link" href="//www.zhihu.com/iphone" class="zh-sidebar-app-link iphone">
+
+<span class="banner"></span>
+<div class="cont">
+<strong class="title">知乎 iPhone 客户端</strong>
+<p class="desc">下载并加入知乎，随时随地提问解惑分享知识，发现更大的世界。</p>
+<span class="arrow">查看详情 &raquo;</span>
+</div>
+</a>
+</div>
+</div>
+
+
+
+</div>
+<div class="zg-clear"></div>
+</div>
+
+<div id="zh-footer" class="zh-footer">
+<div class="zg-wrap clearfix">
+<ul>
+
+<li><a href="/app" target='_blank'>移动应用</a></li>
+<li><a href="/read">知乎阅读</a></li>
+<li><a href="/jobs">加入知乎</a></li>
+<li><a href="/terms" target="_blank">知乎协议</a></li>
+<li><a href="mailto:bd@zhihu.com">商务合作</a></li>
+</ul>
+<span class="copy">&copy; 2014 知乎</span>
+</div>
+</div>
+
+<script type="text/json" class="json-inline" data-name="current_user">["","","","-1","",0,0]</script>
+<script type="text/json" class="json-inline" data-name="env">["zhihu.com","comet.zhihu.com",false,null]</script>
+<script type="text/json" class="json-inline" data-name="permissions">[]</script>
+
+
+<script type="text/json" class="json-inline" data-name="ga_vars">{"user_created":0,"now":1414250474000,"abtest_mask":"------------------------------","user_attr":[0,0,0,"-","-"],"user_hash":0}</script>
+
+<script type="text/json" class="json-inline" data-name="current_question">[290432,0,0,null,0,0,0,0,false,true,true,20275578,0,[],[],"normal",false]</script>
+<script type="text/json" class="json-inline" data-name="current_question_owner">false</script>
+<script type="text/json" class="json-inline" data-name="draft">[]</script>
+<script type="text/json" class="json-inline" data-name="my_answer">{}</script>
+<script type="text/json" class="json-inline" data-name="need_first_answer_guide">false</script>
+
+<script type="text/json" class="json-inline" data-name="redirect_to">""</script>
+
+
+<script src="http://static.zhihu.com/static/ver/be1f4e09e99650d8ff09ac81943bc61f.extern_src.min.js"></script>
+<script src="http://static.zhihu.com/static/ver/db12b6b2c2c69b3f827a3008700c2fb5.app_core.js"></script>
+<script src="http://static.zhihu.com/static/ver/66774a3a259f8ca1659b9e4a2b747052.sign.js"></script>
+<script src="http://static.zhihu.com/static/ver/93c008d66318a98d0207f11711139e0e.app.js"></script>
+<script src="http://static.zhihu.com/static/ver/87da74a3c1691c80e940ac071fc14c8b.rich_text_editor.js"></script>
+
+<script type="text/zscript" znonce="9a08ee2476e14e0c8e64263098c154e3">
+ZH.entrySQ();
+
+</script>
+
+<input type="hidden" name="_xsrf" value="ffeedc5ef85a94c30554f45d4413c4b3"/>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>wget 命令用法详解 - analyzer - 博客园</title>
+<link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=k2uL13BZlYpYjZ7FITMnMaB1mOfAPcMGfJChBRaBpP01"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/KJC/bundle-KJC.css?v=McXcFJ2-CRZdiVVqslrCDSDQBSqn2L0cp0NmbZiGmwc1"/>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/analyzer/rss"/>
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/analyzer/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/analyzer/wlwmanifest.xml"/>
+<script src="http://common.cnblogs.com/script/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'analyzer', cb_enable_mathjax=false;</script>
+<script src="/bundles/blog-common.js?v=SWpHULcCBaWz_GyoQYlE0RqLdwMP4A9MXRJnM8TK7ss1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+<div id="page_begin_html"></div><script>load_page_begin_html();</script>
+
+<table class="Framework" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td colspan="3">
+			
+<div id="top">
+<table cellpadding="10" cellspacing="0">
+	<tr>
+		<td nowrap>
+			<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/analyzer/">Lee's 程序人生</a></h1>
+			HTML CSS Javascript XML AJAX ATLAS C# C++ 数据结构 软件工程 设计模式 asp.net Java 数字图象处理 Sql 数据库
+		</td>
+	</tr>
+</table>
+</div>
+<div id="sub">
+	<div id="sub-right">
+<div class="BlogStats">posts - 545, comments - 355, trackbacks - 5, articles - 1231</div></div>
+	
+&nbsp;
+<a id="Header1_MyLinks1_HomeLink" href="http://www.cnblogs.com/">博客园</a>&nbsp;::
+<a id="Header1_MyLinks1_MyHomeLink" href="http://www.cnblogs.com/analyzer/">首页</a>&nbsp;::
+<a id="Header1_MyLinks1_NewPostLink" rel="nofollow" href="http://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a>&nbsp;::
+<a id="Header1_MyLinks1_ContactLink" accesskey="9" rel="nofollow" href="http://space.cnblogs.com/msg/send/analyzer">联系</a>&nbsp;::
+
+&nbsp;::
+<a id="Header1_MyLinks1_Admin" rel="nofollow" href="http://i.cnblogs.com/">管理</a>
+
+</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="LeftCell">
+			<div id="leftmenu">
+            	
+		            <div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+		            
+<div id=cell>
+<img src="/Skins/KJC/Images/icon-group.jpg" hspace=5 align=left vspace=2><h3>公告</h3>
+<div id=news>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+</div>
+
+	            
+	            <div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+		</td>
+		<td class="MainCell">
+			<div id="main">
+				
+
+	<div class="post">
+		<div class="posthead">
+			<h2>
+				<a id="cb_post_title_url" class="singleposttitle" href="http://www.cnblogs.com/analyzer/archive/2010/05/04/1727438.html">wget 命令用法详解</a>
+			</h2>
+ 			Posted on <span id="post-date">2010-05-04 18:56</span> <a href='http://www.cnblogs.com/analyzer/'>analyzer</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="http://i.cnblogs.com/EditPosts.aspx?postid=1727438" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(1727438);return false;">收藏</a>
+			<script type="text/javascript">var allowComments=true,isLogined=false,cb_blogId=28218,cb_entryId=1727438,cb_blogApp=currentBlogApp,cb_blogUserGuid='4f7a3d0b-63cf-dd11-9e4d-001cf0cd104b',cb_entryCreatedDate='2010/5/4 18:56:00';loadViewCount(cb_entryId);</script>
+			
+		</div>
+		<div class="postbody"><div id="cnblogs_post_body"><span class="Apple-style-span" style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; line-height: 24px; font-size: 13px; color: #333333; "><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">wget是在Linux下开发的开放源代码的软件，作者是Hrvoje Niksic，后来被移植到包括Windows在内的各个平台上。它有以下功能和特点：<br />（1）支持断点下传功能；这一点，也是网络蚂蚁和FlashGet当年最大的卖点，现在，Wget也可以使用此功能，那些网络不是太好的用户可以放心了；<br />（2）同时支持FTP和HTTP下载方式；尽管现在大部分软件可以使用HTTP方式下载，但是，有些时候，仍然需要使用FTP方式下载软件；<br />（3）支持代理服务器；对安全强度很高的系统而言，一般不会将自己的系统直接暴露在互联网上，所以，支持代理是下载软件必须有的功能；<br />（4）设置方便简单；可能，习惯图形界面的用户已经不是太习惯命令行了，但是，命令行在设置上其实有更多的优点，最少，鼠标可以少点很多次，也不要担心是否错点鼠标；<br />（5）程序小，完全免费；程序小可以考虑不计，因为现在的硬盘实在太大了；完全免费就不得不考虑了，即使网络上有很多所谓的免费软件，但是，这些软件的广告却不是我们喜欢的；<br /><span id="more-571"></span><br />wget虽然功能强大，但是使用起来还是比较简单的，基本的语法是：wget [参数列表] URL。下面就结合具体的例子来说明一下wget的用法。<br />1、下载整个http或者ftp站点。<br />wget http://place.your.url/here<br />这个命令可以将http://place.your.url/here 首页下载下来。使用-x会强制建立服务器上一模一样的目录，如果使用-nd参数，那么服务器上下载的所有内容都会加到本地当前目录。</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">wget -r http://place.your.url/here<br />这 个命令会按照递归的方法，下载服务器上所有的目录和文件，实质就是下载整个网站。这个命令一定要小心使用，因为在下载的时候，被下载网站指向的所有地址同 样会被下载，因此，如果这个网站引用了其他网站，那么被引用的网站也会被下载下来！基于这个原因，这个参数不常用。可以用-l number参数来指定下载的层次。例如只下载两层，那么使用-l 2。</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">要是您想制作镜像站点，那么可以使用－m参数，例如：wget -m http://place.your.url/here<br />这时wget会自动判断合适的参数来制作镜像站点。此时，wget会登录到服务器上，读入robots.txt并按robots.txt的规定来执行。</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">2、断点续传。<br />当文件特别大或者网络特别慢的时候，往往一个文件还没有下载完，连接就已经被切断，此时就需要断点续传。wget的断点续传是自动的，只需要使用-c参数，例如：<br />wget -c http://the.url.of/incomplete/file<br />使用断点续传要求服务器支持断点续传。-t参数表示重试次数，例如需要重试100次，那么就写-t 100，如果设成-t 0，那么表示无穷次重试，直到连接成功。-T参数表示超时等待时间，例如-T 120，表示等待120秒连接不上就算超时。</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">3、批量下载。<br />如果有多个文件需要下载，那么可以生成一个文件，把每个文件的URL写一行，例如生成文件download.txt，然后用命令：wget -i download.txt<br />这样就会把download.txt里面列出的每个URL都下载下来。（如果列的是文件就下载文件，如果列的是网站，那么下载首页）</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">4、选择性的下载。<br />可以指定让wget只下载一类文件，或者不下载什么文件。例如：<br />wget -m &#8211;reject=gif http://target.web.site/subdirectory<br />表示下载http://target.web.site/subdirectory，但是忽略gif文件。&#8211;accept=LIST 可以接受的文件类型，&#8211;reject=LIST拒绝接受的文件类型。</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">5、密码和认证。<br />wget只能处理利用用户名/密码方式限制访问的网站，可以利用两个参数：<br />&#8211;http-user=USER设置HTTP用户<br />&#8211;http-passwd=PASS设置HTTP密码<br />对于需要证书做认证的网站，就只能利用其他下载工具了，例如curl。</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">6、利用代理服务器进行下载。<br />如果用户的网络需要经过代理服务器，那么可以让wget通过代理服务器进行文件的下载。此时需要在当前用户的目录下创建一个.wgetrc文件。文件中可以设置代理服务器：<br />http-proxy = 111.111.111.111:8080<br />ftp-proxy = 111.111.111.111:8080<br />分别表示http的代理服务器和ftp的代理服务器。如果代理服务器需要密码则使用：<br />&#8211;proxy-user=USER设置代理用户<br />&#8211;proxy-passwd=PASS设置代理密码<br />这两个参数。<br />使用参数&#8211;proxy=on/off 使用或者关闭代理。<br />wget还有很多有用的功能，需要用户去挖掘。</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">附录：</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">命令格式：<br />wget [参数列表] [目标软件、网页的网址]</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">-V,&#8211;version 显示软件版本号然后退出；<br />-h,&#8211;help显示软件帮助信息；<br />-e,&#8211;execute=COMMAND 执行一个 &#8220;.wgetrc&#8221;命令</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">-o,&#8211;output-file=FILE 将软件输出信息保存到文件；<br />-a,&#8211;append-output=FILE将软件输出信息追加到文件；<br />-d,&#8211;debug显示输出信息；<br />-q,&#8211;quiet 不显示输出信息；<br />-i,&#8211;input-file=FILE 从文件中取得URL；</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">-t,&#8211;tries=NUMBER 是否下载次数（0表示无穷次）<br />-O &#8211;output-document=FILE下载文件保存为别的文件名<br />-nc, &#8211;no-clobber 不要覆盖已经存在的文件<br />-N,&#8211;timestamping只下载比本地新的文件<br />-T,&#8211;timeout=SECONDS 设置超时时间<br />-Y,&#8211;proxy=on/off 关闭代理</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">-nd,&#8211;no-directories 不建立目录<br />-x,&#8211;force-directories 强制建立目录</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">&#8211;http-user=USER设置HTTP用户<br />&#8211;http-passwd=PASS设置HTTP密码<br />&#8211;proxy-user=USER设置代理用户<br />&#8211;proxy-passwd=PASS设置代理密码</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">-r,&#8211;recursive 下载整个网站、目录（小心使用）<br />-l,&#8211;level=NUMBER 下载层次</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">-A,&#8211;accept=LIST 可以接受的文件类型<br />-R,&#8211;reject=LIST拒绝接受的文件类型<br />-D,&#8211;domains=LIST可以接受的域名<br />&#8211;exclude-domains=LIST拒绝的域名<br />-L,&#8211;relative 下载关联链接<br />&#8211;follow-ftp 只下载FTP链接<br />-H,&#8211;span-hosts 可以下载外面的主机<br />-I,&#8211;include-directories=LIST允许的目录<br />-X,&#8211;exclude-directories=LIST 拒绝的目录</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">中文文档名在平常的情况下会被编码， 但是在 &#8211;cut-dirs 时又是正常的，<br />wget -r -np -nH &#8211;cut-dirs=3 ftp://host/test/<br />测试.txt<br />wget -r -np -nH -nd ftp://host/test/<br />%B4%FA%B8%D5.txt<br />wget &#8220;ftp://host/test/*&#8221;<br />%B4%FA%B8%D5.txt</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">由 於不知名的原因，可能是为了避开特殊档名， wget 会自动将抓取档名的部分用 encode_string 处理过， 所以该 patch 就把被 encode_string 处理成 &#8220;%3A&#8221; 这种东西， 用 decode_string 还原成 &#8220;:&#8221;，并套用在目录与档案名称的部分，decode_string 是 wget 内建的函式。</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">wget -t0 -c -nH -x -np -b -m -P /home/sunny/NOD32view/&nbsp; http://downloads1.kaspersky-labs.com/bases/ -o wget.log</p><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.75em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; ">原文地址：<a href="http://linux.blogbus.com/logs/46636997.html" style="text-decoration: none; outline-style: none; outline-width: initial; outline-color: initial; color: #a84900; " target="_blank">http://linux.blogbus.com/logs/46636997.html</a></p></span></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+</div>
+	</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" id="lnk_RefreshComments" onclick="return RefreshCommentList();">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+<div id="comment_form_container"></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="site_nav_under"><a href="http://www.cnblogs.com/" target="_blank" title="开发者的网上家园">博客园首页</a><a href="http://q.cnblogs.com/" target="_blank" title="程序员问答社区">博问</a><a href="http://news.cnblogs.com/" target="_blank" title="IT新闻">新闻</a><a href="http://home.cnblogs.com/ing/" target="_blank">闪存</a><a href="http://job.cnblogs.com/" target="_blank">程序员招聘</a><a href="http://kb.cnblogs.com/" target="_blank">知识库</a></div>
+<div id="opt_under_post"></div>
+<script type="text/javascript">
+    var enableGoogleAd = canShowAdsense(); var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
+    fixPostBodyFormat();
+</script>
+<div id="ad_under_post_holder">
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function () {
+        if (enableGoogleAd) {
+            var gads = document.createElement('script');
+            gads.async = true;
+            gads.type = 'text/javascript';
+            var useSSL = 'https:' == document.location.protocol;
+            gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+        }
+    })();
+</script>
+<script type='text/javascript'>
+    try {
+        if (enableGoogleAd) {
+            googletag.cmd.push(function () {
+                googletag.defineSlot('/1090369/cnblogs_blogpost_C1_sitehome', [300, 250], 'div-gpt-ad-1346480159711-0').addService(googletag.pubads());
+                googletag.defineSlot('/1090369/cnblogs_blogpost_C2', [468, 60], 'div-gpt-ad-1410860226396-0').addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+        };
+    } catch (e) { }
+</script>
+<div id="google_ad_c1" class="c_ad_block">
+    <div id='div-gpt-ad-1346480159711-0' style='width:300px; height:250px;'>
+    <script type='text/javascript'>
+        try {
+            if (enableGoogleAd) {
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1346480159711-0'); });            
+            } else {
+                $('#div-gpt-ad-1346480159711-0').hide();
+            }
+    } catch (e) { }
+    </script>
+    </div>
+</div>
+</div>
+<div id="under_post_news"></div>
+<div id="google_ad_c2" class="c_ad_block">
+<div id='div-gpt-ad-1410860226396-0' style='width:468px; height:60px;'>
+<script type='text/javascript'>
+try {
+    if (enableGoogleAd) {
+        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1410860226396-0'); });
+    } else {
+        $('#div-gpt-ad-1346480159711-0').hide();
+    }
+} catch (e) { }
+</script>
+</div>
+</div>
+<div id="under_post_kb"></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+$(function () {
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 200);
+});
+</script>
+</div>
+
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="FooterCell">
+			
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	<a id="Footer1_Hyperlink3" NAME="Hyperlink1" href="http://www.cnblogs.com/"><font face="Verdana">博客园</font></a>
+	<br />
+	Copyright &copy; analyzer
+</p>
+
+		</td>
+	</tr>
+</table>
+
+<!--PageEndHtml Block Begin-->
+<a href="http://www.51.la/?2154070" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/2154070.asp" style="border:none" /></a>
+<script language="javascript" src="http://count32.51yes.com/click.aspx?id=328101102&logo=9"></script>
+<script>online=new Array();</script>
+<script language="javascript" src="http://wpa.qq.com/getonline?377741023:"></script>
+<script>window.onload=function(){}</script>
+
+<!-- *** Vdoing Code *** -->
+<script type="text/javascript" charset="UTF-8" src="http://s.vdoing.com/u/99/51068.js"></script>
+<noscript><a href="http://www.vdoing.com" title="Vdoing StatsX No.51068"><img src="http://simg.vdoing.com/m/51068/x01.gif?noscript" border="0"></a></noscript>
+<!-- *** End of Vdoing Code *** -->
+
+<script type="text/javascript" src="http://js.tongji.linezing.com/782184/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/782184/tongji.gif"/></a></noscript>
+<!--PageEndHtml Block End-->
+</body>
+</html>
